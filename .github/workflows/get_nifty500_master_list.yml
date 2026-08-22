@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  download-bhavcopy:
+  build-master-list:
     runs-on: ubuntu-latest
 
     steps:
