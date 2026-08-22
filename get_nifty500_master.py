@@ -6,60 +6,47 @@ import pandas as pd
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.5'
+    'Accept': '*/*'
 }
 
 def fetch_csv_safe(urls):
-    """NiftyIndices और NSE से सुरक्षित रूप से CSV डाउनलोड करने का फंक्शन"""
     session = requests.Session()
     session.headers.update(HEADERS)
-    
     for url in urls:
-        for attempt in range(2):
-            try:
-                res = session.get(url, timeout=15)
-                if res.status_code == 200 and len(res.content) > 200:
-                    df = pd.read_csv(io.BytesIO(res.content))
-                    df.columns = df.columns.str.strip()
-                    return df
-            except Exception:
-                time.sleep(1)
-                continue
+        try:
+            res = session.get(url, timeout=15)
+            if res.status_code == 200 and len(res.content) > 200:
+                df = pd.read_csv(io.BytesIO(res.content))
+                df.columns = df.columns.str.strip()
+                return df
+        except Exception:
+            continue
     return None
 
 def fetch_fno_symbols():
-    """F&O स्टॉक्स डाउनलोड करने की सबसे भरोसेमंद विधि (NiftyIndices + Fallbacks)"""
+    """Upstox Open CDN से लाइव NSE F&O लिस्ट प्राप्त करना (कभी ब्लॉक नहीं होता)"""
     fno_symbols = set()
+    upstox_url = "https://assets.upstox.com/market-quote/instruments/exchange/NSE.csv.gz"
     
-    # 1. NiftyDerivatives List (यह NiftyIndices पर उपलब्ध है और कभी ब्लॉक नहीं होती)
-    deriv_urls = [
-        "https://niftyindices.com/IndexConstituent/ind_niftyderivativeslist.csv",
-        "https://archives.nseindia.com/content/indices/ind_niftyderivativeslist.csv",
-        "https://archives.nseindia.com/content/fo/fo_mktlots.csv"
-    ]
-    
-    df_deriv = fetch_csv_safe(deriv_urls)
-    if df_deriv is not None:
-        # Symbol कॉलम ढूँढें
-        sym_col = [c for c in df_deriv.columns if 'symbol' in c.lower()]
-        if sym_col:
-            fno_symbols = set(df_deriv[sym_col[0]].astype(str).str.strip().str.upper().unique())
-            # अगर यह fo_mktlots.csv से आया है तो एक्स्ट्रा फ़िल्टरिंग
-            fno_symbols = {s for s in fno_symbols if s.isalnum() and s not in ['SYMBOL', 'UNDERLYING', 'DERIVATIVES', 'NIFTY', 'BANKNIFTY', 'FINNIFTY', 'MIDCPNIFTY', 'NAN']}
-            if len(fno_symbols) > 50:
-                print(f"✅ F&O लिस्ट सफलतापूर्वक प्राप्त हुई! कुल स्टॉक्स: {len(fno_symbols)}", flush=True)
-                return fno_symbols
-
-    # 2. Fallback: Direct Market Lot Text Extraction (अगर NiftyIndices भी डाउन हो)
-    lot_url = ["https://niftyindices.com/IndexConstituent/ind_nifty500list.csv"] # safety fallback
-    return fno_symbols
+    try:
+        print("🔄 Live F&O डेटा डाउनलोड किया जा रहा है...", flush=True)
+        df = pd.read_csv(upstox_url, compression='gzip')
+        
+        # NSE_FO सेगमेंट और Stock Futures/Options (STKFUT/STKOPT) की फ़िल्टरिंग
+        fno_mask = (df['segment'] == 'NSE_FO') & (df['instrument_type'].str.startswith('STK', na=False))
+        fno_symbols = set(df[fno_mask]['name'].dropna().astype(str).str.strip().str.upper().unique())
+        
+        print(f"✅ लाइव F&O स्टॉक्स मिले: {len(fno_symbols)}", flush=True)
+        return fno_symbols
+    except Exception as e:
+        print(f"⚠️ F&O डाउनलोड में त्रुटि: {e}", flush=True)
+        return fno_symbols
 
 def create_nifty500_master():
     print("🚀 Nifty 500 लिस्ट, F&O फ्लैग, सेक्टर्स और इंडेक्स डेटा तैयार किया जा रहा है...", flush=True)
     os.makedirs("data/master", exist_ok=True)
 
-    # 1. Nifty 500 आधिकारिक मास्टर लिस्ट
+    # 1. Nifty 500 मास्टर लिस्ट
     n500_urls = [
         "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv",
         "https://archives.nseindia.com/content/indices/ind_nifty500list.csv"
@@ -72,19 +59,17 @@ def create_nifty500_master():
 
     print(f"✅ Nifty 500 स्टॉक्स लोड हो गए! कुल स्टॉक्स: {len(n500_df)}", flush=True)
 
-    # 2. F&O स्टॉक्स प्राप्त करें
+    # 2. 100% Live Dynamic F&O स्टॉक्स प्राप्त करें
     fno_symbols = fetch_fno_symbols()
-    if not fno_symbols:
-        print("⚠️ F&O लिस्ट प्राप्त नहीं हो सकी, आगे बढ़ रहे हैं...", flush=True)
 
-    # 3. Sub-Indices मैपिंग (NiftyIndices Server)
+    # 3. Sub-Indices मैपिंग
     indices_config = {
-        'NIFTY 50': ["https://niftyindices.com/IndexConstituent/ind_nifty50list.csv", "https://archives.nseindia.com/content/indices/ind_nifty50list.csv"],
-        'NIFTY BANK': ["https://niftyindices.com/IndexConstituent/ind_niftybanklist.csv", "https://archives.nseindia.com/content/indices/ind_niftybanklist.csv"],
-        'NIFTY NEXT 50': ["https://niftyindices.com/IndexConstituent/ind_niftynext50list.csv", "https://archives.nseindia.com/content/indices/ind_niftynext50list.csv"],
-        'NIFTY MIDCAP 100': ["https://niftyindices.com/IndexConstituent/ind_niftymidcap100list.csv", "https://archives.nseindia.com/content/indices/ind_niftymidcap100list.csv"],
-        'NIFTY SMALLCAP 100': ["https://niftyindices.com/IndexConstituent/ind_niftysmallcap100list.csv", "https://archives.nseindia.com/content/indices/ind_niftysmallcap100list.csv"],
-        'NIFTY FIN SERVICE': ["https://niftyindices.com/IndexConstituent/ind_niftyfinancialserviceslist.csv", "https://archives.nseindia.com/content/indices/ind_niftyfinancialserviceslist.csv"]
+        'NIFTY 50': ["https://niftyindices.com/IndexConstituent/ind_nifty50list.csv"],
+        'NIFTY BANK': ["https://niftyindices.com/IndexConstituent/ind_niftybanklist.csv"],
+        'NIFTY NEXT 50': ["https://niftyindices.com/IndexConstituent/ind_niftynext50list.csv"],
+        'NIFTY MIDCAP 100': ["https://niftyindices.com/IndexConstituent/ind_niftymidcap100list.csv"],
+        'NIFTY SMALLCAP 100': ["https://niftyindices.com/IndexConstituent/ind_niftysmallcap100list.csv"],
+        'NIFTY FIN SERVICE': ["https://niftyindices.com/IndexConstituent/ind_niftyfinancialserviceslist.csv"]
     }
 
     index_mapping = {}
@@ -100,7 +85,6 @@ def create_nifty500_master():
     master_rows = []
 
     for _, row in n500_df.iterrows():
-        # Symbol कॉलम नेम ढूँढें (केस सेंसिटिविटी से बचने के लिए)
         sym_key = [c for c in row.index if 'symbol' in str(c).lower()]
         comp_key = [c for c in row.index if 'company' in str(c).lower()]
         ind_key = [c for c in row.index if 'industry' in str(c).lower()]
