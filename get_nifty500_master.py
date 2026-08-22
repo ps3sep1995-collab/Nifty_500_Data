@@ -1,8 +1,10 @@
 import os
 import io
 import time
+import zipfile
 import requests
 import pandas as pd
+from datetime import datetime, timedelta
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
@@ -34,27 +36,50 @@ def fetch_csv_safe(session, urls):
             continue
     return None
 
-def fetch_nse_official_fno(session):
-    """NSE के आधिकारिक F&O Lot Size डेटाबेस से सही सिंबल्स निकालना"""
+def fetch_fno_symbols_from_bhavcopy(session):
+    """NSE F&O Bhavcopy से ताज़ा F&O स्टॉक्स निकालना"""
     fno_symbols = set()
-    furl = "https://archives.nseindia.com/content/fo/fo_mktlots.csv"
-    try:
-        res = session.get(furl, timeout=15)
-        if res.status_code == 200:
-            lines = res.text.splitlines()
-            for line in lines:
-                parts = [p.strip() for p in line.split(',')]
-                # NSE fo_mktlots में सिंबल 2रे या 3रे कॉलम में होता है
-                if len(parts) >= 2:
-                    sym = parts[1].upper()
-                    # अगर हेडर्स या बेकार टेक्स्ट न हो
-                    if sym and sym not in ['SYMBOL', 'UNDERLYING', 'DERIVATIVES', 'NIFTY', 'BANKNIFTY', 'FINNIFTY', 'MIDCPNIFTY']:
-                        # केवल वैलिड स्टॉक अक्षरों को ही लें
-                        if sym.isalnum():
-                            fno_symbols.add(sym)
-    except Exception as e:
-        print(f"⚠️ NSE F&O Error: {e}", flush=True)
+    current_date = datetime.now()
+    
+    # पिछले 10 दिनों में से सबसे हालिया वर्किंग डे (Trading Day) ढूंढना
+    for i in range(10):
+        target_date = current_date - timedelta(days=i)
         
+        # शनिवार (5) और रविवार (6) को स्किप करें
+        if target_date.weekday() >= 5:
+            continue
+
+        date_str_upper = target_date.strftime("%d%b%Y").upper() # Ex: 19AUG2026
+        year_str = target_date.strftime("%Y")
+        month_str_upper = target_date.strftime("%b").upper()   # Ex: AUG
+        
+        # NSE FO Bhavcopy URL
+        url = f"https://archives.nseindia.com/content/historical/DERIVATIVES/{year_str}/{month_str_upper}/fo{date_str_upper}bhav.csv.zip"
+        
+        try:
+            res = session.get(url, timeout=15)
+            if res.status_code == 200 and len(res.content) > 1000:
+                # Zip फ़ाइल अनज़िप करें
+                with zipfile.ZipFile(io.BytesIO(res.content)) as z:
+                    csv_filename = z.namelist()[0]
+                    with z.open(csv_filename) as f:
+                        df = pd.read_csv(f)
+                        df.columns = df.columns.str.strip()
+                        
+                        # F&O स्टॉक्स (INSTRUMENT == 'STKFUT' या 'STKOPT') के सिंबल्स निकालना
+                        if 'INSTRUMENT' in df.columns and 'SYMBOL' in df.columns:
+                            stk_df = df[df['INSTRUMENT'].str.startswith('STK', na=False)]
+                            fno_symbols = set(stk_df['SYMBOL'].str.strip().str.upper().unique())
+                        elif 'SYMBOL' in df.columns:
+                            # नए फॉर्मैट के लिए
+                            fno_symbols = set(df['SYMBOL'].str.strip().str.upper().unique())
+                            
+                        if len(fno_symbols) > 50:
+                            print(f"✅ NSE F&O Bhavcopy ({target_date.strftime('%Y-%m-%d')}) से F&O स्टॉक्स मिले: {len(fno_symbols)} स्टॉक्स", flush=True)
+                            return fno_symbols
+        except Exception:
+            continue
+            
     return fno_symbols
 
 def create_nifty500_master():
@@ -63,7 +88,7 @@ def create_nifty500_master():
     
     session = get_nse_session()
 
-    # 1. Nifty 500 की आधिकारिक लिस्ट
+    # 1. Nifty 500 आधिकारिक लिस्ट
     n500_urls = [
         "https://archives.nseindia.com/content/indices/ind_nifty500list.csv",
         "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv"
@@ -76,12 +101,10 @@ def create_nifty500_master():
 
     print(f"✅ Nifty 500 स्टॉक्स लोड हो गए! कुल स्टॉक्स: {len(n500_df)}", flush=True)
 
-    # 2. NSE Official F&O List
-    fno_symbols = fetch_nse_official_fno(session)
-    if fno_symbols:
-        print(f"✅ NSE Official से F&O स्टॉक्स मिले: {len(fno_symbols)} स्टॉक्स", flush=True)
-    else:
-        print("⚠️ NSE F&O लिस्ट प्राप्त नहीं हो सकी, आगे बढ़ रहे हैं...", flush=True)
+    # 2. NSE F&O Bhavcopy से F&O स्टॉक्स निकालें
+    fno_symbols = fetch_fno_symbols_from_bhavcopy(session)
+    if not fno_symbols:
+        print("⚠️ F&O Bhavcopy प्राप्त नहीं हो सकी, आगे बढ़ रहे हैं...", flush=True)
 
     # 3. Sub-Indices मैपिंग
     indices_config = {
@@ -100,7 +123,7 @@ def create_nifty500_master():
             for sym in df['Symbol'].str.strip().str.upper():
                 index_mapping.setdefault(sym, []).append(idx_name)
 
-    # 4. Master Data Frame तैयार करना
+    # 4. Master CSV डेटाबेस बनाएं
     master_rows = []
 
     for _, row in n500_df.iterrows():
