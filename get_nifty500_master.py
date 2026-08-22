@@ -1,134 +1,81 @@
 import os
-import io
+import json
 import time
-import zipfile
 import requests
 import pandas as pd
-from datetime import datetime, timedelta
 
-# Browser Headers to bypass NSE Cloudflare/Bot-blocker
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
     'Accept-Encoding': 'gzip, deflate, br',
-    'Connection': 'keep-alive'
+    'Referer': 'https://www.nseindia.com/market-data/live-equity-market'
 }
 
 def get_nse_session():
-    """NSE वेबसाइट से असली Cookies और Session प्राप्त करने के लिए Warmup"""
     session = requests.Session()
     session.headers.update(HEADERS)
     try:
-        # NSE Home page hit to get valid cookies
-        res = session.get("https://www.nseindia.com", timeout=15)
+        # NSE होमपेज से सेशन कुकीज़ प्राप्त करें
+        session.get("https://www.nseindia.com", timeout=15)
         time.sleep(1)
-        # Option Chain page hit to refresh active session
-        session.get("https://www.nseindia.com/option-chain", timeout=15)
+        # लाइव इक्विटी मार्केट पेज से कुकीज़ रिफ्रेश करें
+        session.get("https://www.nseindia.com/market-data/live-equity-market", timeout=15)
         time.sleep(1)
     except Exception as e:
-        print(f"⚠️ NSE Session Connection Warning: {e}", flush=True)
+        print(f"⚠️ NSE कुकी वार्निंग: {e}", flush=True)
     return session
 
-def fetch_fno_symbols_from_nse():
-    """सीधे NSE Archives से F&O (Derivatives) मास्टर लिस्ट खींचना"""
+def fetch_fno_symbols_from_nse_live():
+    """NSE Live Equity Market API से Sec_FO / F&O स्टॉक्स प्राप्त करना"""
     fno_symbols = set()
     session = get_nse_session()
-
-    # 1. NSE Direct Live Fo-Lots List
-    mktlot_urls = [
-        "https://archives.nseindia.com/content/fo/fo_mktlots.csv",
-        "https://www.nseindia.com/content/fo/fo_mktlots.csv"
-    ]
-
-    for url in mktlot_urls:
-        try:
-            res = session.get(url, timeout=15)
-            if res.status_code == 200 and len(res.content) > 200:
-                lines = res.text.splitlines()
-                for line in lines:
-                    parts = [p.strip() for p in line.split(',')]
-                    for p in parts[:3]:
-                        sym = p.upper().replace('"', '').strip()
-                        if sym and sym.isalnum() and sym not in ['SYMBOL', 'UNDERLYING', 'DERIVATIVES', 'NIFTY', 'BANKNIFTY', 'FINNIFTY', 'MIDCPNIFTY', 'NAN']:
-                            fno_symbols.add(sym)
-                if len(fno_symbols) > 50:
-                    print(f"✅ NSE (fo_mktlots.csv) से सीधे F&O स्टॉक्स मिले: {len(fno_symbols)}", flush=True)
-                    return fno_symbols
-        except Exception:
-            continue
-
-    # 2. NSE Bhavcopy (Last 5 days search if Weekend/Holiday)
-    today = datetime.now()
-    for i in range(5):
-        date_str = (today - timedelta(days=i)).strftime('%d%b%Y').upper()
-        # NSE F&O Bhavcopy URL
-        bhav_url = f"https://archives.nseindia.com/content/historical/DERIVATIVES/{today.strftime('%Y')}/{date_str[:3]}/fo{date_str}bhav.csv.zip"
+    
+    # NSE Live Equity Market API URL (Securities in F&O)
+    live_fno_url = "https://www.nseindia.com/api/equity-stockIndices?index=SECURITIES%20IN%20F%26O"
+    
+    try:
+        print("🔄 NSE Live Market API से F&O स्टॉक्स खींचे जा रहे हैं...", flush=True)
+        res = session.get(live_fno_url, timeout=20)
         
-        try:
-            res = session.get(bhav_url, timeout=15)
-            if res.status_code == 200:
-                with zipfile.ZipFile(io.BytesIO(res.content)) as z:
-                    csv_filename = z.namelist()[0]
-                    with z.open(csv_filename) as f:
-                        df = pd.read_csv(f)
-                        df.columns = df.columns.str.strip()
-                        # STKFS (Stock Futures) फ़िल्टर करें
-                        fno_df = df[df['INSTRUMENT'].isin(['FUTSTK', 'OPTSTK'])]
-                        fno_symbols = set(fno_df['SYMBOL'].str.strip().str.upper().unique())
+        if res.status_code == 200:
+            data = res.json()
+            if 'data' in data:
+                for item in data['data']:
+                    symbol = str(item.get('symbol', '')).strip().upper()
+                    if symbol and symbol != 'NAN':
+                        fno_symbols.add(symbol)
                         
-                        if len(fno_symbols) > 50:
-                            print(f"✅ NSE Historical Bhavcopy ({date_str}) से F&O स्टॉक्स मिले: {len(fno_symbols)}", flush=True)
-                            return fno_symbols
-        except Exception:
-            continue
+            if len(fno_symbols) > 50:
+                print(f"✅ NSE Live API से सीधे F&O स्टॉक्स मिले: {len(fno_symbols)}", flush=True)
+                return fno_symbols
+        else:
+            print(f"⚠️ NSE Live API Status Code: {res.status_code}", flush=True)
+            
+    except Exception as e:
+        print(f"⚠️ NSE Live API त्रुटि: {e}", flush=True)
 
     return fno_symbols
 
 def create_nifty500_master():
-    print("🚀 NSE से Nifty 500 लिस्ट, F&O फ्लैग और इंडेक्स डेटा डाउनलोड किया जा रहा है...", flush=True)
+    print("🚀 NSE Live Market से Master List तैयार की जा रही है...", flush=True)
     os.makedirs("data/master", exist_ok=True)
 
-    session = get_nse_session()
-
-    # 1. Nifty 500 Master List directly from NSE Archives
+    # 1. Nifty 500 मास्टर लिस्ट (Archives)
     n500_url = "https://archives.nseindia.com/content/indices/ind_nifty500list.csv"
     try:
-        res = session.get(n500_url, timeout=15)
-        n500_df = pd.read_csv(io.BytesIO(res.content))
+        res = requests.get(n500_url, headers=HEADERS, timeout=15)
+        n500_df = pd.read_csv(pd.io.common.BytesIO(res.content))
         n500_df.columns = n500_df.columns.str.strip()
-        print(f"✅ NSE से Nifty 500 स्टॉक्स लोड हो गए! कुल: {len(n500_df)}", flush=True)
+        print(f"✅ Nifty 500 स्टॉक्स लोड हो गए: {len(n500_df)}", flush=True)
     except Exception as e:
-        print(f"❌ NSE Nifty 500 डाउनलोड में समस्या: {e}", flush=True)
+        print(f"❌ Nifty 500 डाउनलोड में समस्या: {e}", flush=True)
         return
 
-    # 2. Direct NSE F&O List Fetching
-    fno_symbols = fetch_fno_symbols_from_nse()
+    # 2. Live API से F&O स्टॉक्स निकालें
+    fno_symbols = fetch_fno_symbols_from_nse_live()
 
-    # 3. Sub-Indices Mapping from NSE
-    indices_config = {
-        'NIFTY 50': "https://archives.nseindia.com/content/indices/ind_nifty50list.csv",
-        'NIFTY BANK': "https://archives.nseindia.com/content/indices/ind_niftybanklist.csv",
-        'NIFTY NEXT 50': "https://archives.nseindia.com/content/indices/ind_niftynext50list.csv",
-        'NIFTY MIDCAP 100': "https://archives.nseindia.com/content/indices/ind_niftymidcap100list.csv",
-        'NIFTY SMALLCAP 100': "https://archives.nseindia.com/content/indices/ind_niftysmallcap100list.csv",
-        'NIFTY FIN SERVICE': "https://archives.nseindia.com/content/indices/ind_niftyfinancialserviceslist.csv"
-    }
-
-    index_mapping = {}
-    for idx_name, url in indices_config.items():
-        try:
-            res = session.get(url, timeout=10)
-            if res.status_code == 200:
-                df = pd.read_csv(io.BytesIO(res.content))
-                sym_col = [c for c in df.columns if 'symbol' in c.lower()]
-                if sym_col:
-                    for sym in df[sym_col[0]].astype(str).str.strip().str.upper():
-                        index_mapping.setdefault(sym, []).append(idx_name)
-        except Exception:
-            continue
-
-    # 4. Final Master File Processing
+    # 3. Master CSV डेटाबेस बनाएं
     master_rows = []
     for _, row in n500_df.iterrows():
         sym_key = [c for c in row.index if 'symbol' in str(c).lower()]
@@ -146,18 +93,12 @@ def create_nifty500_master():
 
         is_fno = 1 if symbol in fno_symbols else 0
 
-        matched_indices = index_mapping.get(symbol, [])
-        if "NIFTY 500" not in matched_indices:
-            matched_indices.append("NIFTY 500")
-
-        indices_str = ", ".join(matched_indices)
-
         master_rows.append({
             'SYMBOL': symbol,
             'COMPANY_NAME': company_name,
             'ISIN': isin,
             'SECTOR': industry,
-            'INDICES': indices_str,
+            'INDICES': 'NIFTY 500',
             'IS_FNO': is_fno
         })
 
@@ -165,7 +106,7 @@ def create_nifty500_master():
     output_path = "data/master/nifty500_master.csv"
     master_df.to_csv(output_path, index=False)
 
-    print(f"\n🎉 सफलता! NSE डेटा से मास्टर फ़ाइल `{output_path}` तैयार है।", flush=True)
+    print(f"\n🎉 सफलता! मास्टर फ़ाइल `{output_path}` तैयार है।", flush=True)
     print(f"📊 कुल रिकॉर्ड्स: {len(master_df)}", flush=True)
     print(f"🔥 इनमें से F&O स्टॉक्स: {master_df['IS_FNO'].sum()}", flush=True)
 
