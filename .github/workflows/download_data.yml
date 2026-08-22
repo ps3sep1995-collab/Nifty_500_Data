@@ -5,6 +5,9 @@ on:
     - cron: '0 13 * * 1-5'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   download-bhavcopy:
     runs-on: ubuntu-latest
@@ -13,7 +16,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -31,3 +33,12 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: |
           python download_historical_bhavcopies.py
+
+      - name: Commit and Push Downloaded Files
+        if: always()
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/raw/*.csv || true
+          git commit -m "Auto-save downloaded files [skip ci]" || true
+          git push
