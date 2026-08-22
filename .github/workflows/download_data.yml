@@ -1,0 +1,37 @@
+name: NSE Historical Data Downloader
+
+on:
+  schedule:
+    # हर दिन शाम 6:30 PM IST (1:00 PM UTC) पर ऑटोमैटिक चलेगा
+    - cron: '0 13 * * 1-5'
+  workflow_dispatch: # GitHub UI से बटन दबाकर मैन्युअल चलाने के लिए
+
+jobs:
+  download-bhavcopy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Historical Downloader
+        run: |
+          python download_full_history_from_start.py
+
+      - name: Commit and Push Downloaded Files
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/raw/*.csv
+          git commit -m "Automated Bhavcopy Update [skip ci]" || exit 0
+          git push
