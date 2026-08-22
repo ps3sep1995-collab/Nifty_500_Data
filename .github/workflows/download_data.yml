@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Historical Downloader
         run: |
-          python download_full_history_from_start.py
+          python download_historical_bhavcopies.py
 
       - name: Commit and Push Downloaded Files
         run: |
