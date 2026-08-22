@@ -1,4 +1,4 @@
-name: download-bhavcopy
+name: Fetch Historical Bhavcopy
 
 on:
   schedule:
