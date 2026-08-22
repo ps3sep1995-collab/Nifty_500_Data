@@ -1,501 +1,501 @@
 SYMBOL,COMPANY_NAME,ISIN,SECTOR,INDICES,IS_FNO
-360ONE,360 ONE WAM Ltd.,INE466L01038,Financial Services,NIFTY 500,1
+360ONE,360 ONE WAM Ltd.,INE466L01038,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
 3MINDIA,3M India Ltd.,INE470A01017,Diversified,NIFTY 500,0
-ABB,ABB India Ltd.,INE117A01022,Capital Goods,NIFTY 500,1
+ABB,ABB India Ltd.,INE117A01022,Capital Goods,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
 ACC,ACC Ltd.,INE012A01025,Construction Materials,NIFTY 500,0
 ACMESOLAR,ACME Solar Holdings Ltd.,INE622W01025,Power,NIFTY 500,0
 AIAENG,AIA Engineering Ltd.,INE212H01026,Capital Goods,NIFTY 500,0
-APLAPOLLO,APL Apollo Tubes Ltd.,INE702C01027,Capital Goods,NIFTY 500,1
-AUBANK,AU Small Finance Bank Ltd.,INE949L01017,Financial Services,NIFTY 500,1
+APLAPOLLO,APL Apollo Tubes Ltd.,INE702C01027,Capital Goods,"NIFTY MIDCAP 100, NIFTY METAL, NIFTY 500",1
+AUBANK,AU Small Finance Bank Ltd.,INE949L01017,Financial Services,"NIFTY BANK, NIFTY MIDCAP 100, NIFTY 500",1
 AWL,AWL Agri Business Ltd.,INE699H01024,Fast Moving Consumer Goods,NIFTY 500,0
 AADHARHFC,Aadhar Housing Finance Ltd.,INE883F01010,Financial Services,NIFTY 500,0
-AARTIIND,Aarti Industries Ltd.,INE769A01020,Chemicals,NIFTY 500,0
+AARTIIND,Aarti Industries Ltd.,INE769A01020,Chemicals,"NIFTY SMALLCAP 100, NIFTY 500",0
 AAVAS,Aavas Financiers Ltd.,INE216P01012,Financial Services,NIFTY 500,0
-ABBOTINDIA,Abbott India Ltd.,INE358A01014,Healthcare,NIFTY 500,0
+ABBOTINDIA,Abbott India Ltd.,INE358A01014,Healthcare,"NIFTY PHARMA, NIFTY 500",0
 ACE,Action Construction Equipment Ltd.,INE731H01025,Capital Goods,NIFTY 500,0
 ACUTAAS,Acutaas Chemicals Ltd.,INE00FF01025,Healthcare,NIFTY 500,0
-ADANIENSOL,Adani Energy Solutions Ltd.,INE931S01010,Power,NIFTY 500,1
-ADANIENT,Adani Enterprises Ltd.,INE423A01024,Metals & Mining,NIFTY 500,1
-ADANIGREEN,Adani Green Energy Ltd.,INE364U01010,Power,NIFTY 500,1
-ADANIPORTS,Adani Ports and Special Economic Zone Ltd.,INE742F01042,Services,NIFTY 500,1
-ADANIPOWER,Adani Power Ltd.,INE814H01029,Power,NIFTY 500,1
-ATGL,Adani Total Gas Ltd.,INE399L01023,Oil Gas & Consumable Fuels,NIFTY 500,0
-ABCAPITAL,Aditya Birla Capital Ltd.,INE674K01013,Financial Services,NIFTY 500,1
+ADANIENSOL,Adani Energy Solutions Ltd.,INE931S01010,Power,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
+ADANIENT,Adani Enterprises Ltd.,INE423A01024,Metals & Mining,"NIFTY 50, NIFTY METAL, NIFTY 500",1
+ADANIGREEN,Adani Green Energy Ltd.,INE364U01010,Power,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
+ADANIPORTS,Adani Ports and Special Economic Zone Ltd.,INE742F01042,Services,"NIFTY 50, NIFTY 500",1
+ADANIPOWER,Adani Power Ltd.,INE814H01029,Power,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
+ATGL,Adani Total Gas Ltd.,INE399L01023,Oil Gas & Consumable Fuels,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",0
+ABCAPITAL,Aditya Birla Capital Ltd.,INE674K01013,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
 ABFRL,Aditya Birla Fashion and Retail Ltd.,INE647O01011,Consumer Services,NIFTY 500,0
 ABLBL,Aditya Birla Lifestyle Brands Ltd.,INE14LE01019,Consumer Services,NIFTY 500,0
-ABREL,Aditya Birla Real Estate Ltd.,INE055A01016,Realty,NIFTY 500,0
+ABREL,Aditya Birla Real Estate Ltd.,INE055A01016,Realty,"NIFTY SMALLCAP 100, NIFTY REALTY, NIFTY 500",0
 ABSLAMC,Aditya Birla Sun Life AMC Ltd.,INE404A01024,Financial Services,NIFTY 500,0
 CPPLUS,Aditya Infotech Ltd.,INE819V01029,Capital Goods,NIFTY 500,0
-AEGISLOG,Aegis Logistics Ltd.,INE208C01025,Oil Gas & Consumable Fuels,NIFTY 500,0
+AEGISLOG,Aegis Logistics Ltd.,INE208C01025,Oil Gas & Consumable Fuels,"NIFTY SMALLCAP 100, NIFTY ENERGY, NIFTY 500",0
 AEGISVOPAK,Aegis Vopak Terminals Ltd.,INE0INX01018,Oil Gas & Consumable Fuels,NIFTY 500,0
-AFCONS,Afcons Infrastructure Ltd.,INE101I01011,Construction,NIFTY 500,0
-AFFLE,Affle 3i Ltd.,INE00WC01027,Information Technology,NIFTY 500,0
-AJANTPHARM,Ajanta Pharmaceuticals Ltd.,INE031B01049,Healthcare,NIFTY 500,0
-ALKEM,Alkem Laboratories Ltd.,INE540L01014,Healthcare,NIFTY 500,1
+AFCONS,Afcons Infrastructure Ltd.,INE101I01011,Construction,"NIFTY SMALLCAP 100, NIFTY 500",0
+AFFLE,Affle 3i Ltd.,INE00WC01027,Information Technology,"NIFTY SMALLCAP 100, NIFTY 500",0
+AJANTPHARM,Ajanta Pharmaceuticals Ltd.,INE031B01049,Healthcare,"NIFTY PHARMA, NIFTY 500",0
+ALKEM,Alkem Laboratories Ltd.,INE540L01014,Healthcare,"NIFTY MIDCAP 100, NIFTY PHARMA, NIFTY 500",1
 ABDL,Allied Blenders and Distillers Ltd.,INE552Z01027,Fast Moving Consumer Goods,NIFTY 500,0
-ARE&M,Amara Raja Energy & Mobility Ltd.,INE885A01032,Automobile and Auto Components,NIFTY 500,0
-AMBER,Amber Enterprises India Ltd.,INE371P01015,Consumer Durables,NIFTY 500,1
-AMBUJACEM,Ambuja Cements Ltd.,INE079A01024,Construction Materials,NIFTY 500,1
-ANANDRATHI,Anand Rathi Wealth Ltd.,INE463V01026,Financial Services,NIFTY 500,0
-ANANTRAJ,Anant Raj Ltd.,INE242C01024,Realty,NIFTY 500,0
-ANGELONE,Angel One Ltd.,INE732I01021,Financial Services,NIFTY 500,1
+ARE&M,Amara Raja Energy & Mobility Ltd.,INE885A01032,Automobile and Auto Components,"NIFTY SMALLCAP 100, NIFTY 500",0
+AMBER,Amber Enterprises India Ltd.,INE371P01015,Consumer Durables,"NIFTY SMALLCAP 100, NIFTY 500",1
+AMBUJACEM,Ambuja Cements Ltd.,INE079A01024,Construction Materials,"NIFTY NEXT 50, NIFTY 500",1
+ANANDRATHI,Anand Rathi Wealth Ltd.,INE463V01026,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+ANANTRAJ,Anant Raj Ltd.,INE242C01024,Realty,"NIFTY SMALLCAP 100, NIFTY REALTY, NIFTY 500",0
+ANGELONE,Angel One Ltd.,INE732I01021,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",1
 ANTHEM,Anthem Biosciences Ltd.,INE0CZ201020,Healthcare,NIFTY 500,0
 ANURAS,Anupam Rasayan India Ltd.,INE930P01018,Chemicals,NIFTY 500,0
 APARINDS,Apar Industries Ltd.,INE372A01015,Capital Goods,NIFTY 500,0
-APOLLOHOSP,Apollo Hospitals Enterprise Ltd.,INE437A01024,Healthcare,NIFTY 500,1
+APOLLOHOSP,Apollo Hospitals Enterprise Ltd.,INE437A01024,Healthcare,"NIFTY 50, NIFTY 500",1
 APOLLOTYRE,Apollo Tyres Ltd.,INE438A01022,Automobile and Auto Components,NIFTY 500,0
-APTUS,Aptus Value Housing Finance India Ltd.,INE852O01025,Financial Services,NIFTY 500,0
+APTUS,Aptus Value Housing Finance India Ltd.,INE852O01025,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
 ASAHIINDIA,Asahi India Glass Ltd.,INE439A01020,Automobile and Auto Components,NIFTY 500,0
-ASHOKLEY,Ashok Leyland Ltd.,INE208A01029,Capital Goods,NIFTY 500,1
-ASIANPAINT,Asian Paints Ltd.,INE021A01026,Consumer Durables,NIFTY 500,1
-ASTERDM,Aster DM Quality Care Ltd.,INE914M01019,Healthcare,NIFTY 500,0
-ASTRAL,Astral Ltd.,INE006I01046,Capital Goods,NIFTY 500,1
-ATHERENERG,Ather Energy Ltd.,INE0LEZ01016,Automobile and Auto Components,NIFTY 500,0
+ASHOKLEY,Ashok Leyland Ltd.,INE208A01029,Capital Goods,"NIFTY MIDCAP 100, NIFTY AUTO, NIFTY 500",1
+ASIANPAINT,Asian Paints Ltd.,INE021A01026,Consumer Durables,"NIFTY 50, NIFTY 500",1
+ASTERDM,Aster DM Quality Care Ltd.,INE914M01019,Healthcare,"NIFTY SMALLCAP 100, NIFTY 500",0
+ASTRAL,Astral Ltd.,INE006I01046,Capital Goods,"NIFTY MIDCAP 100, NIFTY 500",1
+ATHERENERG,Ather Energy Ltd.,INE0LEZ01016,Automobile and Auto Components,"NIFTY SMALLCAP 100, NIFTY 500",0
 ATUL,Atul Ltd.,INE100A01010,Chemicals,NIFTY 500,0
-AUROPHARMA,Aurobindo Pharma Ltd.,INE406A01037,Healthcare,NIFTY 500,1
+AUROPHARMA,Aurobindo Pharma Ltd.,INE406A01037,Healthcare,"NIFTY MIDCAP 100, NIFTY PHARMA, NIFTY 500",1
 AIIL,Authum Investment & Infrastructure Ltd.,INE206F01022,Financial Services,NIFTY 500,0
-DMART,Avenue Supermarts Ltd.,INE192R01011,Consumer Services,NIFTY 500,1
-AXISBANK,Axis Bank Ltd.,INE238A01034,Financial Services,NIFTY 500,1
-BEML,BEML Ltd.,INE258A01024,Capital Goods,NIFTY 500,0
-BLS,BLS International Services Ltd.,INE153T01027,Consumer Services,NIFTY 500,0
-BSE,BSE Ltd.,INE118H01025,Financial Services,NIFTY 500,1
-BAJAJ-AUTO,Bajaj Auto Ltd.,INE917I01010,Automobile and Auto Components,NIFTY 500,0
-BAJFINANCE,Bajaj Finance Ltd.,INE296A01032,Financial Services,NIFTY 500,1
-BAJAJFINSV,Bajaj Finserv Ltd.,INE918I01026,Financial Services,NIFTY 500,1
-BAJAJHLDNG,Bajaj Holdings & Investment Ltd.,INE118A01012,Financial Services,NIFTY 500,1
+DMART,Avenue Supermarts Ltd.,INE192R01011,Consumer Services,"NIFTY NEXT 50, NIFTY 500",1
+AXISBANK,Axis Bank Ltd.,INE238A01034,Financial Services,"NIFTY 50, NIFTY BANK, NIFTY 500",1
+BEML,BEML Ltd.,INE258A01024,Capital Goods,"NIFTY SMALLCAP 100, NIFTY 500",0
+BLS,BLS International Services Ltd.,INE153T01027,Consumer Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+BSE,BSE Ltd.,INE118H01025,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
+BAJAJ-AUTO,Bajaj Auto Ltd.,INE917I01010,Automobile and Auto Components,"NIFTY 50, NIFTY AUTO, NIFTY 500",0
+BAJFINANCE,Bajaj Finance Ltd.,INE296A01032,Financial Services,"NIFTY 50, NIFTY 500",1
+BAJAJFINSV,Bajaj Finserv Ltd.,INE918I01026,Financial Services,"NIFTY 50, NIFTY 500",1
+BAJAJHLDNG,Bajaj Holdings & Investment Ltd.,INE118A01012,Financial Services,"NIFTY NEXT 50, NIFTY 500",1
 BAJAJHFL,Bajaj Housing Finance Ltd.,INE377Y01014,Financial Services,NIFTY 500,0
 BALKRISIND,Balkrishna Industries Ltd.,INE787D01026,Automobile and Auto Components,NIFTY 500,0
 BALRAMCHIN,Balrampur Chini Mills Ltd.,INE119A01028,Fast Moving Consumer Goods,NIFTY 500,0
-BANDHANBNK,Bandhan Bank Ltd.,INE545U01014,Financial Services,NIFTY 500,1
-BANKBARODA,Bank of Baroda,INE028A01039,Financial Services,NIFTY 500,1
-BANKINDIA,Bank of India,INE084A01016,Financial Services,NIFTY 500,1
+BANDHANBNK,Bandhan Bank Ltd.,INE545U01014,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",1
+BANKBARODA,Bank of Baroda,INE028A01039,Financial Services,"NIFTY BANK, NIFTY NEXT 50, NIFTY 500",1
+BANKINDIA,Bank of India,INE084A01016,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
 MAHABANK,Bank of Maharashtra,INE457A01014,Financial Services,NIFTY 500,0
 BATAINDIA,Bata India Ltd.,INE176A01028,Consumer Durables,NIFTY 500,0
 BAYERCROP,Bayer Cropscience Ltd.,INE462A01022,Chemicals,NIFTY 500,0
 BELRISE,Belrise Industries Ltd.,INE894V01022,Automobile and Auto Components,NIFTY 500,0
 BERGEPAINT,Berger Paints India Ltd.,INE463A01038,Consumer Durables,NIFTY 500,0
-BDL,Bharat Dynamics Ltd.,INE171Z01026,Capital Goods,NIFTY 500,1
-BEL,Bharat Electronics Ltd.,INE263A01024,Capital Goods,NIFTY 500,1
-BHARATFORG,Bharat Forge Ltd.,INE465A01025,Automobile and Auto Components,NIFTY 500,1
-BHEL,Bharat Heavy Electricals Ltd.,INE257A01026,Capital Goods,NIFTY 500,1
-BPCL,Bharat Petroleum Corporation Ltd.,INE029A01011,Oil Gas & Consumable Fuels,NIFTY 500,1
-BHARTIARTL,Bharti Airtel Ltd.,INE397D01024,Telecommunication,NIFTY 500,1
+BDL,Bharat Dynamics Ltd.,INE171Z01026,Capital Goods,"NIFTY MIDCAP 100, NIFTY 500",1
+BEL,Bharat Electronics Ltd.,INE263A01024,Capital Goods,"NIFTY 50, NIFTY 500",1
+BHARATFORG,Bharat Forge Ltd.,INE465A01025,Automobile and Auto Components,"NIFTY MIDCAP 100, NIFTY AUTO, NIFTY 500",1
+BHEL,Bharat Heavy Electricals Ltd.,INE257A01026,Capital Goods,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",1
+BPCL,Bharat Petroleum Corporation Ltd.,INE029A01011,Oil Gas & Consumable Fuels,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
+BHARTIARTL,Bharti Airtel Ltd.,INE397D01024,Telecommunication,"NIFTY 50, NIFTY 500",1
 BHARTIHEXA,Bharti Hexacom Ltd.,INE343G01021,Telecommunication,NIFTY 500,0
 BIKAJI,Bikaji Foods International Ltd.,INE00E101023,Fast Moving Consumer Goods,NIFTY 500,0
-GROWW,Billionbrains Garage Ventures Ltd.,INE0HOQ01053,Financial Services,NIFTY 500,0
-BIOCON,Biocon Ltd.,INE376G01013,Healthcare,NIFTY 500,1
+GROWW,Billionbrains Garage Ventures Ltd.,INE0HOQ01053,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",0
+BIOCON,Biocon Ltd.,INE376G01013,Healthcare,"NIFTY MIDCAP 100, NIFTY PHARMA, NIFTY 500",1
 BSOFT,Birlasoft Ltd.,INE836A01035,Information Technology,NIFTY 500,0
 BLUEDART,Blue Dart Express Ltd.,INE233B01017,Services,NIFTY 500,0
 BLUEJET,Blue Jet Healthcare Ltd.,INE0KBH01020,Healthcare,NIFTY 500,0
-BLUESTARCO,Blue Star Ltd.,INE472A01039,Consumer Durables,NIFTY 500,1
+BLUESTARCO,Blue Star Ltd.,INE472A01039,Consumer Durables,"NIFTY MIDCAP 100, NIFTY 500",1
 BBTC,Bombay Burmah Trading Corporation Ltd.,INE050A01025,Fast Moving Consumer Goods,NIFTY 500,0
-BOSCHLTD,Bosch Ltd.,INE323A01026,Automobile and Auto Components,NIFTY 500,1
-FIRSTCRY,Brainbees Solutions Ltd.,INE02RE01045,Consumer Services,NIFTY 500,0
-BRIGADE,Brigade Enterprises Ltd.,INE791I01019,Realty,NIFTY 500,0
-BRITANNIA,Britannia Industries Ltd.,INE216A01030,Fast Moving Consumer Goods,NIFTY 500,1
+BOSCHLTD,Bosch Ltd.,INE323A01026,Automobile and Auto Components,"NIFTY NEXT 50, NIFTY AUTO, NIFTY 500",1
+FIRSTCRY,Brainbees Solutions Ltd.,INE02RE01045,Consumer Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+BRIGADE,Brigade Enterprises Ltd.,INE791I01019,Realty,"NIFTY SMALLCAP 100, NIFTY REALTY, NIFTY 500",0
+BRITANNIA,Britannia Industries Ltd.,INE216A01030,Fast Moving Consumer Goods,"NIFTY NEXT 50, NIFTY FMCG, NIFTY 500",1
 MAPMYINDIA,C.E. Info Systems Ltd.,INE0BV301023,Information Technology,NIFTY 500,0
 CCL,CCL Products (I) Ltd.,INE421D01022,Fast Moving Consumer Goods,NIFTY 500,0
-CESC,CESC Ltd.,INE486A01021,Power,NIFTY 500,0
-CGPOWER,CG Power and Industrial Solutions Ltd.,INE067A01029,Capital Goods,NIFTY 500,1
+CESC,CESC Ltd.,INE486A01021,Power,"NIFTY SMALLCAP 100, NIFTY ENERGY, NIFTY 500",0
+CGPOWER,CG Power and Industrial Solutions Ltd.,INE067A01029,Capital Goods,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
 CIEINDIA,CIE Automotive India Ltd.,INE536H01010,Automobile and Auto Components,NIFTY 500,0
 CRISIL,CRISIL Ltd.,INE007A01025,Financial Services,NIFTY 500,0
 CANFINHOME,Can Fin Homes Ltd.,INE477A01020,Financial Services,NIFTY 500,0
-CANBK,Canara Bank,INE476A01022,Financial Services,NIFTY 500,1
+CANBK,Canara Bank,INE476A01022,Financial Services,"NIFTY BANK, NIFTY NEXT 50, NIFTY 500",1
 CANHLIFE,Canara HSBC Life Insurance Company Ltd.,INE01TY01017,Financial Services,NIFTY 500,0
 CAPLIPOINT,Caplin Point Laboratories Ltd.,INE475E01026,Healthcare,NIFTY 500,0
-CGCL,Capri Global Capital Ltd.,INE180C01042,Financial Services,NIFTY 500,0
+CGCL,Capri Global Capital Ltd.,INE180C01042,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
 CARBORUNIV,Carborundum Universal Ltd.,INE120A01034,Capital Goods,NIFTY 500,0
 CARTRADE,Cartrade Tech Ltd.,INE290S01011,Consumer Services,NIFTY 500,0
-CASTROLIND,Castrol India Ltd.,INE172A01027,Oil Gas & Consumable Fuels,NIFTY 500,0
+CASTROLIND,Castrol India Ltd.,INE172A01027,Oil Gas & Consumable Fuels,"NIFTY SMALLCAP 100, NIFTY ENERGY, NIFTY 500",0
 CEATLTD,Ceat Ltd.,INE482A01020,Automobile and Auto Components,NIFTY 500,0
 CEMPRO,Cemindia Projects Ltd.,INE686A01026,Construction,NIFTY 500,0
 CENTRALBK,Central Bank of India,INE483A01010,Financial Services,NIFTY 500,0
-CDSL,Central Depository Services (India) Ltd.,INE736A01011,Financial Services,NIFTY 500,1
+CDSL,Central Depository Services (India) Ltd.,INE736A01011,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",1
 CHALET,Chalet Hotels Ltd.,INE427F01016,Consumer Services,NIFTY 500,0
-CHAMBLFERT,Chambal Fertilizers & Chemicals Ltd.,INE085A01013,Chemicals,NIFTY 500,0
+CHAMBLFERT,Chambal Fertilizers & Chemicals Ltd.,INE085A01013,Chemicals,"NIFTY SMALLCAP 100, NIFTY 500",0
 CHENNPETRO,Chennai Petroleum Corporation Ltd.,INE178A01016,Oil Gas & Consumable Fuels,NIFTY 500,0
 CHOICEIN,Choice International Ltd.,INE102B01014,Financial Services,NIFTY 500,0
-CHOLAHLDNG,Cholamandalam Financial Holdings Ltd.,INE149A01033,Financial Services,NIFTY 500,0
-CHOLAFIN,Cholamandalam Investment and Finance Company Ltd.,INE121A01024,Financial Services,NIFTY 500,1
-CIPLA,Cipla Ltd.,INE059A01026,Healthcare,NIFTY 500,1
-CUB,City Union Bank Ltd.,INE491A01021,Financial Services,NIFTY 500,0
+CHOLAHLDNG,Cholamandalam Financial Holdings Ltd.,INE149A01033,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+CHOLAFIN,Cholamandalam Investment and Finance Company Ltd.,INE121A01024,Financial Services,"NIFTY NEXT 50, NIFTY 500",1
+CIPLA,Cipla Ltd.,INE059A01026,Healthcare,"NIFTY 50, NIFTY PHARMA, NIFTY 500",1
+CUB,City Union Bank Ltd.,INE491A01021,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
 CLEAN,Clean Science and Technology Ltd.,INE227W01023,Chemicals,NIFTY 500,0
-COALINDIA,Coal India Ltd.,INE522F01014,Oil Gas & Consumable Fuels,NIFTY 500,1
-COCHINSHIP,Cochin Shipyard Ltd.,INE704P01025,Capital Goods,NIFTY 500,1
-COFORGE,Coforge Ltd.,INE591G01025,Information Technology,NIFTY 500,1
-COHANCE,Cohance Lifesciences Ltd.,INE03QK01018,Healthcare,NIFTY 500,0
-COLPAL,Colgate Palmolive (India) Ltd.,INE259A01022,Fast Moving Consumer Goods,NIFTY 500,1
-CAMS,Computer Age Management Services Ltd.,INE596I01020,Financial Services,NIFTY 500,1
+COALINDIA,Coal India Ltd.,INE522F01014,Oil Gas & Consumable Fuels,"NIFTY 50, NIFTY ENERGY, NIFTY 500",1
+COCHINSHIP,Cochin Shipyard Ltd.,INE704P01025,Capital Goods,"NIFTY MIDCAP 100, NIFTY 500",1
+COFORGE,Coforge Ltd.,INE591G01025,Information Technology,"NIFTY MIDCAP 100, NIFTY IT, NIFTY 500",1
+COHANCE,Cohance Lifesciences Ltd.,INE03QK01018,Healthcare,"NIFTY SMALLCAP 100, NIFTY 500",0
+COLPAL,Colgate Palmolive (India) Ltd.,INE259A01022,Fast Moving Consumer Goods,"NIFTY MIDCAP 100, NIFTY FMCG, NIFTY 500",1
+CAMS,Computer Age Management Services Ltd.,INE596I01020,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",1
 CONCORDBIO,Concord Biotech Ltd.,INE338H01029,Healthcare,NIFTY 500,0
-CONCOR,Container Corporation of India Ltd.,INE111A01025,Services,NIFTY 500,1
-COROMANDEL,Coromandel International Ltd.,INE169A01031,Chemicals,NIFTY 500,0
+CONCOR,Container Corporation of India Ltd.,INE111A01025,Services,"NIFTY MIDCAP 100, NIFTY 500",1
+COROMANDEL,Coromandel International Ltd.,INE169A01031,Chemicals,"NIFTY MIDCAP 100, NIFTY 500",0
 CRAFTSMAN,Craftsman Automation Ltd.,INE00LO01017,Automobile and Auto Components,NIFTY 500,0
-CREDITACC,CreditAccess Grameen Ltd.,INE741K01010,Financial Services,NIFTY 500,0
-CROMPTON,Crompton Greaves Consumer Electricals Ltd.,INE299U01018,Consumer Durables,NIFTY 500,1
-CUMMINSIND,Cummins India Ltd.,INE298A01020,Capital Goods,NIFTY 500,1
+CREDITACC,CreditAccess Grameen Ltd.,INE741K01010,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+CROMPTON,Crompton Greaves Consumer Electricals Ltd.,INE299U01018,Consumer Durables,"NIFTY SMALLCAP 100, NIFTY 500",1
+CUMMINSIND,Cummins India Ltd.,INE298A01020,Capital Goods,"NIFTY NEXT 50, NIFTY 500",1
 CYIENT,Cyient Ltd.,INE136B01020,Information Technology,NIFTY 500,0
 DCMSHRIRAM,DCM Shriram Ltd.,INE499A01024,Diversified,NIFTY 500,0
-DLF,DLF Ltd.,INE271C01023,Realty,NIFTY 500,1
+DLF,DLF Ltd.,INE271C01023,Realty,"NIFTY NEXT 50, NIFTY REALTY, NIFTY 500",1
 DOMS,DOMS Industries Ltd.,INE321T01012,Fast Moving Consumer Goods,NIFTY 500,0
-DABUR,Dabur India Ltd.,INE016A01026,Fast Moving Consumer Goods,NIFTY 500,1
+DABUR,Dabur India Ltd.,INE016A01026,Fast Moving Consumer Goods,"NIFTY MIDCAP 100, NIFTY FMCG, NIFTY 500",1
 DALBHARAT,Dalmia Bharat Ltd.,INE00R701025,Construction Materials,NIFTY 500,1
-DATAPATTNS,Data Patterns (India) Ltd.,INE0IX101010,Capital Goods,NIFTY 500,0
-DEEPAKFERT,Deepak Fertilisers & Petrochemicals Corp. Ltd.,INE501A01019,Chemicals,NIFTY 500,0
+DATAPATTNS,Data Patterns (India) Ltd.,INE0IX101010,Capital Goods,"NIFTY SMALLCAP 100, NIFTY 500",0
+DEEPAKFERT,Deepak Fertilisers & Petrochemicals Corp. Ltd.,INE501A01019,Chemicals,"NIFTY SMALLCAP 100, NIFTY 500",0
 DEEPAKNTR,Deepak Nitrite Ltd.,INE288B01029,Chemicals,NIFTY 500,0
-DELHIVERY,Delhivery Ltd.,INE148O01028,Services,NIFTY 500,1
-DEVYANI,Devyani International Ltd.,INE872J01023,Consumer Services,NIFTY 500,0
-DIVISLAB,Divi's Laboratories Ltd.,INE361B01024,Healthcare,NIFTY 500,1
-DIXON,Dixon Technologies (India) Ltd.,INE935N01020,Consumer Durables,NIFTY 500,1
-LALPATHLAB,Dr. Lal Path Labs Ltd.,INE600L01024,Healthcare,NIFTY 500,0
-DRREDDY,Dr. Reddy's Laboratories Ltd.,INE089A01031,Healthcare,NIFTY 500,1
+DELHIVERY,Delhivery Ltd.,INE148O01028,Services,"NIFTY SMALLCAP 100, NIFTY 500",1
+DEVYANI,Devyani International Ltd.,INE872J01023,Consumer Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+DIVISLAB,Divi's Laboratories Ltd.,INE361B01024,Healthcare,"NIFTY NEXT 50, NIFTY PHARMA, NIFTY 500",1
+DIXON,Dixon Technologies (India) Ltd.,INE935N01020,Consumer Durables,"NIFTY MIDCAP 100, NIFTY 500",1
+LALPATHLAB,Dr. Lal Path Labs Ltd.,INE600L01024,Healthcare,"NIFTY SMALLCAP 100, NIFTY 500",0
+DRREDDY,Dr. Reddy's Laboratories Ltd.,INE089A01031,Healthcare,"NIFTY 50, NIFTY PHARMA, NIFTY 500",1
 EIDPARRY,E.I.D. Parry (India) Ltd.,INE126A01031,Fast Moving Consumer Goods,NIFTY 500,0
 EIHOTEL,EIH Ltd.,INE230A01023,Consumer Services,NIFTY 500,0
-EICHERMOT,Eicher Motors Ltd.,INE066A01021,Automobile and Auto Components,NIFTY 500,1
+EICHERMOT,Eicher Motors Ltd.,INE066A01021,Automobile and Auto Components,"NIFTY 50, NIFTY AUTO, NIFTY 500",1
 ELECON,Elecon Engineering Co. Ltd.,INE205B01031,Capital Goods,NIFTY 500,0
 ELGIEQUIP,Elgi Equipments Ltd.,INE285A01027,Capital Goods,NIFTY 500,0
-EMAMILTD,Emami Ltd.,INE548C01032,Fast Moving Consumer Goods,NIFTY 500,0
+EMAMILTD,Emami Ltd.,INE548C01032,Fast Moving Consumer Goods,"NIFTY FMCG, NIFTY 500",0
 EMCURE,Emcure Pharmaceuticals Ltd.,INE168P01015,Healthcare,NIFTY 500,0
 EMMVEE,Emmvee Photovoltaic Power Ltd.,INE1C6T01020,Capital Goods,NIFTY 500,0
 ENDURANCE,Endurance Technologies Ltd.,INE913H01037,Automobile and Auto Components,NIFTY 500,0
 ENGINERSIN,Engineers India Ltd.,INE510A01028,Construction,NIFTY 500,0
 ERIS,Eris Lifesciences Ltd.,INE406M01024,Healthcare,NIFTY 500,0
 ESCORTS,Escorts Kubota Ltd.,INE042A01014,Capital Goods,NIFTY 500,0
-ETERNAL,Eternal Ltd.,INE758T01015,Consumer Services,NIFTY 500,1
-EXIDEIND,Exide Industries Ltd.,INE302A01020,Automobile and Auto Components,NIFTY 500,0
-NYKAA,FSN E-Commerce Ventures Ltd.,INE388Y01029,Consumer Services,NIFTY 500,1
-FEDERALBNK,Federal Bank Ltd.,INE171A01029,Financial Services,NIFTY 500,1
+ETERNAL,Eternal Ltd.,INE758T01015,Consumer Services,"NIFTY 50, NIFTY 500",1
+EXIDEIND,Exide Industries Ltd.,INE302A01020,Automobile and Auto Components,"NIFTY MIDCAP 100, NIFTY AUTO, NIFTY 500",0
+NYKAA,FSN E-Commerce Ventures Ltd.,INE388Y01029,Consumer Services,"NIFTY MIDCAP 100, NIFTY 500",1
+FEDERALBNK,Federal Bank Ltd.,INE171A01029,Financial Services,"NIFTY BANK, NIFTY MIDCAP 100, NIFTY 500",1
 FACT,Fertilisers and Chemicals Travancore Ltd.,INE188A01015,Chemicals,NIFTY 500,0
 FINCABLES,Finolex Cables Ltd.,INE235A01022,Capital Goods,NIFTY 500,0
-FSL,Firstsource Solutions Ltd.,INE684F01012,Services,NIFTY 500,0
-FIVESTAR,Five-Star Business Finance Ltd.,INE128S01021,Financial Services,NIFTY 500,0
-FORCEMOT,Force Motors Ltd.,INE451A01017,Automobile and Auto Components,NIFTY 500,1
-FORTIS,Fortis Healthcare Ltd.,INE061F01013,Healthcare,NIFTY 500,1
-GAIL,GAIL (India) Ltd.,INE129A01019,Oil Gas & Consumable Fuels,NIFTY 500,1
-GVT&D,GE Vernova T&D India Ltd.,INE200A01026,Capital Goods,NIFTY 500,0
-GMRAIRPORT,GMR Airports Ltd.,INE776C01039,Services,NIFTY 500,1
+FSL,Firstsource Solutions Ltd.,INE684F01012,Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+FIVESTAR,Five-Star Business Finance Ltd.,INE128S01021,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+FORCEMOT,Force Motors Ltd.,INE451A01017,Automobile and Auto Components,"NIFTY SMALLCAP 100, NIFTY 500",1
+FORTIS,Fortis Healthcare Ltd.,INE061F01013,Healthcare,"NIFTY MIDCAP 100, NIFTY 500",1
+GAIL,GAIL (India) Ltd.,INE129A01019,Oil Gas & Consumable Fuels,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
+GVT&D,GE Vernova T&D India Ltd.,INE200A01026,Capital Goods,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",0
+GMRAIRPORT,GMR Airports Ltd.,INE776C01039,Services,"NIFTY MIDCAP 100, NIFTY 500",1
 GABRIEL,Gabriel India Ltd.,INE524A01029,Automobile and Auto Components,NIFTY 500,0
 GALLANTT,Gallantt Ispat Ltd.,INE297H01019,Capital Goods,NIFTY 500,0
-GRSE,Garden Reach Shipbuilders & Engineers Ltd.,INE382Z01011,Capital Goods,NIFTY 500,0
+GRSE,Garden Reach Shipbuilders & Engineers Ltd.,INE382Z01011,Capital Goods,"NIFTY SMALLCAP 100, NIFTY 500",0
 GICRE,General Insurance Corporation of India,INE481Y01014,Financial Services,NIFTY 500,0
 GILLETTE,Gillette India Ltd.,INE322A01010,Fast Moving Consumer Goods,NIFTY 500,0
-GLAND,Gland Pharma Ltd.,INE068V01023,Healthcare,NIFTY 500,0
+GLAND,Gland Pharma Ltd.,INE068V01023,Healthcare,"NIFTY SMALLCAP 100, NIFTY PHARMA, NIFTY 500",0
 GLAXO,Glaxosmithkline Pharmaceuticals Ltd.,INE159A01016,Healthcare,NIFTY 500,0
-GLENMARK,Glenmark Pharmaceuticals Ltd.,INE935A01035,Healthcare,NIFTY 500,1
+GLENMARK,Glenmark Pharmaceuticals Ltd.,INE935A01035,Healthcare,"NIFTY MIDCAP 100, NIFTY PHARMA, NIFTY 500",1
 MEDANTA,Global Health Ltd.,INE474Q01031,Healthcare,NIFTY 500,0
 GODIGIT,Go Digit General Insurance Ltd.,INE03JT01014,Financial Services,NIFTY 500,0
-GPIL,Godawari Power & Ispat Ltd.,INE177H01039,Capital Goods,NIFTY 500,0
-GODFRYPHLP,Godfrey Phillips India Ltd.,INE260B01028,Fast Moving Consumer Goods,NIFTY 500,1
-GODREJCP,Godrej Consumer Products Ltd.,INE102D01028,Fast Moving Consumer Goods,NIFTY 500,1
+GPIL,Godawari Power & Ispat Ltd.,INE177H01039,Capital Goods,"NIFTY SMALLCAP 100, NIFTY 500",0
+GODFRYPHLP,Godfrey Phillips India Ltd.,INE260B01028,Fast Moving Consumer Goods,"NIFTY MIDCAP 100, NIFTY 500",1
+GODREJCP,Godrej Consumer Products Ltd.,INE102D01028,Fast Moving Consumer Goods,"NIFTY NEXT 50, NIFTY FMCG, NIFTY 500",1
 GODREJIND,Godrej Industries Ltd.,INE233A01035,Diversified,NIFTY 500,0
-GODREJPROP,Godrej Properties Ltd.,INE484J01027,Realty,NIFTY 500,1
+GODREJPROP,Godrej Properties Ltd.,INE484J01027,Realty,"NIFTY MIDCAP 100, NIFTY REALTY, NIFTY 500",1
 GRANULES,Granules India Ltd.,INE101D01020,Healthcare,NIFTY 500,0
 GRAPHITE,Graphite India Ltd.,INE371A01025,Capital Goods,NIFTY 500,0
-GRASIM,Grasim Industries Ltd.,INE047A01021,Construction Materials,NIFTY 500,1
+GRASIM,Grasim Industries Ltd.,INE047A01021,Construction Materials,"NIFTY 50, NIFTY 500",1
 GRAVITA,Gravita India Ltd.,INE024L01027,Metals & Mining,NIFTY 500,0
-GESHIP,Great Eastern Shipping Co. Ltd.,INE017A01032,Services,NIFTY 500,0
+GESHIP,Great Eastern Shipping Co. Ltd.,INE017A01032,Services,"NIFTY SMALLCAP 100, NIFTY 500",0
 FLUOROCHEM,Gujarat Fluorochemicals Ltd.,INE09N301011,Chemicals,NIFTY 500,0
-GMDCLTD,Gujarat Mineral Development Corporation Ltd.,INE131A01031,Metals & Mining,NIFTY 500,0
+GMDCLTD,Gujarat Mineral Development Corporation Ltd.,INE131A01031,Metals & Mining,"NIFTY SMALLCAP 100, NIFTY 500",0
 HEG,H.E.G. Ltd.,INE545A01024,Capital Goods,NIFTY 500,0
-HBLENGINE,HBL Engineering Ltd.,INE292B01021,Capital Goods,NIFTY 500,0
-HCLTECH,HCL Technologies Ltd.,INE860A01027,Information Technology,NIFTY 500,1
+HBLENGINE,HBL Engineering Ltd.,INE292B01021,Capital Goods,"NIFTY SMALLCAP 100, NIFTY 500",0
+HCLTECH,HCL Technologies Ltd.,INE860A01027,Information Technology,"NIFTY 50, NIFTY IT, NIFTY 500",1
 HDBFS,HDB Financial Services Ltd.,INE756I01012,Financial Services,NIFTY 500,0
-HDFCAMC,HDFC Asset Management Company Ltd.,INE127D01025,Financial Services,NIFTY 500,1
-HDFCBANK,HDFC Bank Ltd.,INE040A01034,Financial Services,NIFTY 500,1
-HDFCLIFE,HDFC Life Insurance Company Ltd.,INE795G01014,Financial Services,NIFTY 500,1
+HDFCAMC,HDFC Asset Management Company Ltd.,INE127D01025,Financial Services,"NIFTY NEXT 50, NIFTY 500",1
+HDFCBANK,HDFC Bank Ltd.,INE040A01034,Financial Services,"NIFTY 50, NIFTY BANK, NIFTY 500",1
+HDFCLIFE,HDFC Life Insurance Company Ltd.,INE795G01014,Financial Services,"NIFTY 50, NIFTY 500",1
 HFCL,HFCL Ltd.,INE548A01028,Telecommunication,NIFTY 500,0
-HAVELLS,Havells India Ltd.,INE176B01034,Consumer Durables,NIFTY 500,1
-HEROMOTOCO,Hero MotoCorp Ltd.,INE158A01026,Automobile and Auto Components,NIFTY 500,1
+HAVELLS,Havells India Ltd.,INE176B01034,Consumer Durables,"NIFTY MIDCAP 100, NIFTY 500",1
+HEROMOTOCO,Hero MotoCorp Ltd.,INE158A01026,Automobile and Auto Components,"NIFTY MIDCAP 100, NIFTY AUTO, NIFTY 500",1
 HEXT,Hexaware Technologies Ltd.,INE093A01041,Information Technology,NIFTY 500,0
-HSCL,Himadri Speciality Chemical Ltd.,INE019C01026,Chemicals,NIFTY 500,0
-HINDALCO,Hindalco Industries Ltd.,INE038A01020,Metals & Mining,NIFTY 500,1
-HAL,Hindustan Aeronautics Ltd.,INE066F01020,Capital Goods,NIFTY 500,1
-HINDCOPPER,Hindustan Copper Ltd.,INE531E01026,Metals & Mining,NIFTY 500,0
-HINDPETRO,Hindustan Petroleum Corporation Ltd.,INE094A01015,Oil Gas & Consumable Fuels,NIFTY 500,1
-HINDUNILVR,Hindustan Unilever Ltd.,INE030A01027,Fast Moving Consumer Goods,NIFTY 500,1
-HINDZINC,Hindustan Zinc Ltd.,INE267A01025,Metals & Mining,NIFTY 500,1
-POWERINDIA,Hitachi Energy India Ltd.,INE07Y701011,Capital Goods,NIFTY 500,1
+HSCL,Himadri Speciality Chemical Ltd.,INE019C01026,Chemicals,"NIFTY SMALLCAP 100, NIFTY 500",0
+HINDALCO,Hindalco Industries Ltd.,INE038A01020,Metals & Mining,"NIFTY 50, NIFTY METAL, NIFTY 500",1
+HAL,Hindustan Aeronautics Ltd.,INE066F01020,Capital Goods,"NIFTY NEXT 50, NIFTY 500",1
+HINDCOPPER,Hindustan Copper Ltd.,INE531E01026,Metals & Mining,"NIFTY SMALLCAP 100, NIFTY METAL, NIFTY 500",0
+HINDPETRO,Hindustan Petroleum Corporation Ltd.,INE094A01015,Oil Gas & Consumable Fuels,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",1
+HINDUNILVR,Hindustan Unilever Ltd.,INE030A01027,Fast Moving Consumer Goods,"NIFTY 50, NIFTY FMCG, NIFTY 500",1
+HINDZINC,Hindustan Zinc Ltd.,INE267A01025,Metals & Mining,"NIFTY NEXT 50, NIFTY METAL, NIFTY 500",1
+POWERINDIA,Hitachi Energy India Ltd.,INE07Y701011,Capital Goods,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",1
 HOMEFIRST,Home First Finance Company India Ltd.,INE481N01025,Financial Services,NIFTY 500,0
 HONASA,Honasa Consumer Ltd.,INE0J5401028,Fast Moving Consumer Goods,NIFTY 500,0
 HONAUT,Honeywell Automation India Ltd.,INE671A01010,Capital Goods,NIFTY 500,0
-HUDCO,Housing & Urban Development Corporation Ltd.,INE031A01017,Financial Services,NIFTY 500,0
-HYUNDAI,Hyundai Motor India Ltd.,INE0V6F01027,Automobile and Auto Components,NIFTY 500,1
-ICICIBANK,ICICI Bank Ltd.,INE090A01021,Financial Services,NIFTY 500,1
-ICICIGI,ICICI Lombard General Insurance Company Ltd.,INE765G01017,Financial Services,NIFTY 500,1
-ICICIAMC,ICICI Prudential Asset Management Company Ltd.,INE346A01027,Financial Services,NIFTY 500,0
+HUDCO,Housing & Urban Development Corporation Ltd.,INE031A01017,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",0
+HYUNDAI,Hyundai Motor India Ltd.,INE0V6F01027,Automobile and Auto Components,"NIFTY NEXT 50, NIFTY 500",1
+ICICIBANK,ICICI Bank Ltd.,INE090A01021,Financial Services,"NIFTY 50, NIFTY BANK, NIFTY 500",1
+ICICIGI,ICICI Lombard General Insurance Company Ltd.,INE765G01017,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
+ICICIAMC,ICICI Prudential Asset Management Company Ltd.,INE346A01027,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",0
 ICICIPRULI,ICICI Prudential Life Insurance Company Ltd.,INE726G01019,Financial Services,NIFTY 500,1
-IDBI,IDBI Bank Ltd.,INE008A01015,Financial Services,NIFTY 500,0
-IDFCFIRSTB,IDFC First Bank Ltd.,INE092T01019,Financial Services,NIFTY 500,1
-IFCI,IFCI Ltd.,INE039A01010,Financial Services,NIFTY 500,0
-IIFL,IIFL Finance Ltd.,INE530B01024,Financial Services,NIFTY 500,0
+IDBI,IDBI Bank Ltd.,INE008A01015,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+IDFCFIRSTB,IDFC First Bank Ltd.,INE092T01019,Financial Services,"NIFTY BANK, NIFTY MIDCAP 100, NIFTY 500",1
+IFCI,IFCI Ltd.,INE039A01010,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+IIFL,IIFL Finance Ltd.,INE530B01024,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
 IRB,IRB Infrastructure Developers Ltd.,INE821I01022,Construction,NIFTY 500,0
-IRCON,IRCON International Ltd.,INE962Y01021,Construction,NIFTY 500,0
+IRCON,IRCON International Ltd.,INE962Y01021,Construction,"NIFTY SMALLCAP 100, NIFTY 500",0
 ITCHOTELS,ITC Hotels Ltd.,INE379A01028,Consumer Services,NIFTY 500,0
-ITC,ITC Ltd.,INE154A01025,Fast Moving Consumer Goods,NIFTY 500,1
-ITI,ITI Ltd.,INE248A01017,Telecommunication,NIFTY 500,0
+ITC,ITC Ltd.,INE154A01025,Fast Moving Consumer Goods,"NIFTY 50, NIFTY FMCG, NIFTY 500",1
+ITI,ITI Ltd.,INE248A01017,Telecommunication,"NIFTY SMALLCAP 100, NIFTY 500",0
 INDGN,Indegene Ltd.,INE065X01017,Healthcare,NIFTY 500,0
 INDIACEM,India Cements Ltd.,INE383A01012,Construction Materials,NIFTY 500,0
 INDIAMART,Indiamart Intermesh Ltd.,INE933S01016,Consumer Services,NIFTY 500,0
-INDIANB,Indian Bank,INE562A01011,Financial Services,NIFTY 500,1
+INDIANB,Indian Bank,INE562A01011,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
 IEX,Indian Energy Exchange Ltd.,INE022Q01020,Financial Services,NIFTY 500,1
-INDHOTEL,Indian Hotels Co. Ltd.,INE053A01029,Consumer Services,NIFTY 500,1
-IOC,Indian Oil Corporation Ltd.,INE242A01010,Oil Gas & Consumable Fuels,NIFTY 500,1
+INDHOTEL,Indian Hotels Co. Ltd.,INE053A01029,Consumer Services,"NIFTY NEXT 50, NIFTY 500",1
+IOC,Indian Oil Corporation Ltd.,INE242A01010,Oil Gas & Consumable Fuels,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
 IOB,Indian Overseas Bank,INE565A01014,Financial Services,NIFTY 500,0
-IRCTC,Indian Railway Catering And Tourism Corporation Ltd.,INE335Y01020,Consumer Services,NIFTY 500,0
-IRFC,Indian Railway Finance Corporation Ltd.,INE053F01010,Financial Services,NIFTY 500,1
-IREDA,Indian Renewable Energy Development Agency Ltd.,INE202E01016,Financial Services,NIFTY 500,1
-IGL,Indraprastha Gas Ltd.,INE203G01027,Oil Gas & Consumable Fuels,NIFTY 500,0
-INDUSTOWER,Indus Towers Ltd.,INE121J01017,Telecommunication,NIFTY 500,1
-INDUSINDBK,IndusInd Bank Ltd.,INE095A01012,Financial Services,NIFTY 500,1
-NAUKRI,Info Edge (India) Ltd.,INE663F01032,Consumer Services,NIFTY 500,1
-INFY,Infosys Ltd.,INE009A01021,Information Technology,NIFTY 500,1
-INOXWIND,Inox Wind Ltd.,INE066P01011,Capital Goods,NIFTY 500,1
+IRCTC,Indian Railway Catering And Tourism Corporation Ltd.,INE335Y01020,Consumer Services,"NIFTY MIDCAP 100, NIFTY 500",0
+IRFC,Indian Railway Finance Corporation Ltd.,INE053F01010,Financial Services,"NIFTY NEXT 50, NIFTY 500",1
+IREDA,Indian Renewable Energy Development Agency Ltd.,INE202E01016,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
+IGL,Indraprastha Gas Ltd.,INE203G01027,Oil Gas & Consumable Fuels,"NIFTY SMALLCAP 100, NIFTY ENERGY, NIFTY 500",0
+INDUSTOWER,Indus Towers Ltd.,INE121J01017,Telecommunication,"NIFTY MIDCAP 100, NIFTY 500",1
+INDUSINDBK,IndusInd Bank Ltd.,INE095A01012,Financial Services,"NIFTY BANK, NIFTY MIDCAP 100, NIFTY 500",1
+NAUKRI,Info Edge (India) Ltd.,INE663F01032,Consumer Services,"NIFTY MIDCAP 100, NIFTY 500",1
+INFY,Infosys Ltd.,INE009A01021,Information Technology,"NIFTY 50, NIFTY IT, NIFTY 500",1
+INOXWIND,Inox Wind Ltd.,INE066P01011,Capital Goods,"NIFTY SMALLCAP 100, NIFTY ENERGY, NIFTY 500",1
 INTELLECT,Intellect Design Arena Ltd.,INE306R01017,Information Technology,NIFTY 500,0
-INDIGO,InterGlobe Aviation Ltd.,INE646L01027,Services,NIFTY 500,1
+INDIGO,InterGlobe Aviation Ltd.,INE646L01027,Services,"NIFTY 50, NIFTY 500",1
 IGIL,International Gemological Institute Ltd.,INE0Q9301021,Services,NIFTY 500,0
-IKS,Inventurus Knowledge Solutions Ltd.,INE115Q01022,Information Technology,NIFTY 500,0
-IPCALAB,Ipca Laboratories Ltd.,INE571A01038,Healthcare,NIFTY 500,0
+IKS,Inventurus Knowledge Solutions Ltd.,INE115Q01022,Information Technology,"NIFTY SMALLCAP 100, NIFTY 500",0
+IPCALAB,Ipca Laboratories Ltd.,INE571A01038,Healthcare,"NIFTY PHARMA, NIFTY 500",0
 JKCEMENT,J.K. Cement Ltd.,INE823G01014,Construction Materials,NIFTY 500,0
-JBMA,JBM Auto Ltd.,INE927D01051,Automobile and Auto Components,NIFTY 500,0
+JBMA,JBM Auto Ltd.,INE927D01051,Automobile and Auto Components,"NIFTY SMALLCAP 100, NIFTY 500",0
 JKTYRE,JK Tyre & Industries Ltd.,INE573A01042,Automobile and Auto Components,NIFTY 500,0
-JMFINANCIL,JM Financial Ltd.,INE780C01023,Financial Services,NIFTY 500,0
-JSWCEMENT,JSW Cement Ltd.,INE718I01012,Construction Materials,NIFTY 500,0
+JMFINANCIL,JM Financial Ltd.,INE780C01023,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+JSWCEMENT,JSW Cement Ltd.,INE718I01012,Construction Materials,"NIFTY SMALLCAP 100, NIFTY 500",0
 JSWDULUX,JSW Dulux Ltd.,INE133A01011,Consumer Durables,NIFTY 500,0
-JSWENERGY,JSW Energy Ltd.,INE121E01018,Power,NIFTY 500,1
+JSWENERGY,JSW Energy Ltd.,INE121E01018,Power,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",1
 JSWINFRA,JSW Infrastructure Ltd.,INE880J01026,Services,NIFTY 500,0
-JSWSTEEL,JSW Steel Ltd.,INE019A01038,Metals & Mining,NIFTY 500,1
+JSWSTEEL,JSW Steel Ltd.,INE019A01038,Metals & Mining,"NIFTY 50, NIFTY METAL, NIFTY 500",1
 JAINREC,Jain Resource Recycling Ltd.,INE0YD401026,Metals & Mining,NIFTY 500,0
-JPPOWER,Jaiprakash Power Ventures Ltd.,INE351F01018,Power,NIFTY 500,0
+JPPOWER,Jaiprakash Power Ventures Ltd.,INE351F01018,Power,"NIFTY ENERGY, NIFTY 500",0
 J&KBANK,Jammu & Kashmir Bank Ltd.,INE168A01041,Financial Services,NIFTY 500,0
 JINDALSAW,Jindal Saw Ltd.,INE324A01032,Capital Goods,NIFTY 500,0
-JSL,Jindal Stainless Ltd.,INE220G01021,Metals & Mining,NIFTY 500,0
-JINDALSTEL,Jindal Steel Ltd.,INE749A01030,Metals & Mining,NIFTY 500,1
-JIOFIN,Jio Financial Services Ltd.,INE758E01017,Financial Services,NIFTY 500,1
-JUBLFOOD,Jubilant Foodworks Ltd.,INE797F01020,Consumer Services,NIFTY 500,1
+JSL,Jindal Stainless Ltd.,INE220G01021,Metals & Mining,"NIFTY METAL, NIFTY 500",0
+JINDALSTEL,Jindal Steel Ltd.,INE749A01030,Metals & Mining,"NIFTY NEXT 50, NIFTY METAL, NIFTY 500",1
+JIOFIN,Jio Financial Services Ltd.,INE758E01017,Financial Services,"NIFTY 50, NIFTY 500",1
+JUBLFOOD,Jubilant Foodworks Ltd.,INE797F01020,Consumer Services,"NIFTY MIDCAP 100, NIFTY 500",1
 JUBLINGREA,Jubilant Ingrevia Ltd.,INE0BY001018,Chemicals,NIFTY 500,0
 JUBLPHARMA,Jubilant Pharmova Ltd.,INE700A01033,Healthcare,NIFTY 500,0
 JWL,Jupiter Wagons Ltd.,INE209L01016,Capital Goods,NIFTY 500,0
-JYOTICNC,Jyoti CNC Automation Ltd.,INE980O01024,Capital Goods,NIFTY 500,0
+JYOTICNC,Jyoti CNC Automation Ltd.,INE980O01024,Capital Goods,"NIFTY SMALLCAP 100, NIFTY 500",0
 KPRMILL,K.P.R. Mill Ltd.,INE930H01031,Textiles,NIFTY 500,0
-KEI,KEI Industries Ltd.,INE878B01027,Capital Goods,NIFTY 500,1
-KPITTECH,KPIT Technologies Ltd.,INE04I401011,Information Technology,NIFTY 500,1
+KEI,KEI Industries Ltd.,INE878B01027,Capital Goods,"NIFTY MIDCAP 100, NIFTY 500",1
+KPITTECH,KPIT Technologies Ltd.,INE04I401011,Information Technology,"NIFTY MIDCAP 100, NIFTY 500",1
 KAJARIACER,Kajaria Ceramics Ltd.,INE217B01036,Consumer Durables,NIFTY 500,0
 KPIL,Kalpataru Projects International Ltd.,INE220B01022,Construction,NIFTY 500,0
-KALYANKJIL,Kalyan Jewellers India Ltd.,INE303R01014,Consumer Durables,NIFTY 500,1
-KARURVYSYA,Karur Vysya Bank Ltd.,INE036D01028,Financial Services,NIFTY 500,0
-KAYNES,Kaynes Technology India Ltd.,INE918Z01012,Capital Goods,NIFTY 500,1
-KEC,Kec International Ltd.,INE389H01022,Construction,NIFTY 500,0
-KFINTECH,Kfin Technologies Ltd.,INE138Y01010,Financial Services,NIFTY 500,1
+KALYANKJIL,Kalyan Jewellers India Ltd.,INE303R01014,Consumer Durables,"NIFTY MIDCAP 100, NIFTY 500",1
+KARURVYSYA,Karur Vysya Bank Ltd.,INE036D01028,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+KAYNES,Kaynes Technology India Ltd.,INE918Z01012,Capital Goods,"NIFTY SMALLCAP 100, NIFTY 500",1
+KEC,Kec International Ltd.,INE389H01022,Construction,"NIFTY SMALLCAP 100, NIFTY 500",0
+KFINTECH,Kfin Technologies Ltd.,INE138Y01010,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",1
 KIRLOSENG,Kirloskar Oil Eng Ltd.,INE146L01010,Capital Goods,NIFTY 500,0
-KOTAKBANK,Kotak Mahindra Bank Ltd.,INE237A01036,Financial Services,NIFTY 500,1
+KOTAKBANK,Kotak Mahindra Bank Ltd.,INE237A01036,Financial Services,"NIFTY 50, NIFTY BANK, NIFTY 500",1
 KIMS,Krishna Institute of Medical Sciences Ltd.,INE967H01025,Healthcare,NIFTY 500,0
-LTF,L&T Finance Ltd.,INE498L01015,Financial Services,NIFTY 500,1
+LTF,L&T Finance Ltd.,INE498L01015,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
 LTTS,L&T Technology Services Ltd.,INE010V01017,Information Technology,NIFTY 500,0
-LGEINDIA,LG Electronics India Ltd.,INE324D01010,Consumer Durables,NIFTY 500,0
-LICHSGFIN,LIC Housing Finance Ltd.,INE115A01026,Financial Services,NIFTY 500,1
+LGEINDIA,LG Electronics India Ltd.,INE324D01010,Consumer Durables,"NIFTY MIDCAP 100, NIFTY 500",0
+LICHSGFIN,LIC Housing Finance Ltd.,INE115A01026,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
 LTFOODS,LT Foods Ltd.,INE818H01020,Fast Moving Consumer Goods,NIFTY 500,0
-LTM,LTM Ltd.,INE214T01019,Information Technology,NIFTY 500,1
-LT,Larsen & Toubro Ltd.,INE018A01030,Construction,NIFTY 500,1
+LTM,LTM Ltd.,INE214T01019,Information Technology,"NIFTY NEXT 50, NIFTY IT, NIFTY 500",1
+LT,Larsen & Toubro Ltd.,INE018A01030,Construction,"NIFTY 50, NIFTY 500",1
 LATENTVIEW,Latent View Analytics Ltd.,INE0I7C01011,Information Technology,NIFTY 500,0
-LAURUSLABS,Laurus Labs Ltd.,INE947Q01028,Healthcare,NIFTY 500,1
+LAURUSLABS,Laurus Labs Ltd.,INE947Q01028,Healthcare,"NIFTY MIDCAP 100, NIFTY PHARMA, NIFTY 500",1
 THELEELA,Leela Palaces Hotels & Resorts Ltd.,INE0AQ201015,Consumer Services,NIFTY 500,0
 LEMONTREE,Lemon Tree Hotels Ltd.,INE970X01018,Consumer Services,NIFTY 500,0
-LENSKART,Lenskart Solutions Ltd.,INE956O01016,Consumer Services,NIFTY 500,0
+LENSKART,Lenskart Solutions Ltd.,INE956O01016,Consumer Services,"NIFTY MIDCAP 100, NIFTY 500",0
 LICI,Life Insurance Corporation of India,INE0J1Y01017,Financial Services,NIFTY 500,1
 LINDEINDIA,Linde India Ltd.,INE473A01011,Chemicals,NIFTY 500,0
-LLOYDSME,Lloyds Metals And Energy Ltd.,INE281B01032,Metals & Mining,NIFTY 500,0
-LODHA,Lodha Developers Ltd.,INE670K01029,Realty,NIFTY 500,1
-LUPIN,Lupin Ltd.,INE326A01037,Healthcare,NIFTY 500,1
+LLOYDSME,Lloyds Metals And Energy Ltd.,INE281B01032,Metals & Mining,"NIFTY METAL, NIFTY 500",0
+LODHA,Lodha Developers Ltd.,INE670K01029,Realty,"NIFTY NEXT 50, NIFTY REALTY, NIFTY 500",1
+LUPIN,Lupin Ltd.,INE326A01037,Healthcare,"NIFTY MIDCAP 100, NIFTY PHARMA, NIFTY 500",1
 MMTC,MMTC Ltd.,INE123F01029,Services,NIFTY 500,0
-MRF,MRF Ltd.,INE883A01011,Automobile and Auto Components,NIFTY 500,0
-MGL,Mahanagar Gas Ltd.,INE002S01010,Oil Gas & Consumable Fuels,NIFTY 500,0
-M&MFIN,Mahindra & Mahindra Financial Services Ltd.,INE774D01024,Financial Services,NIFTY 500,0
-M&M,Mahindra & Mahindra Ltd.,INE101A01026,Automobile and Auto Components,NIFTY 500,0
-MANAPPURAM,Manappuram Finance Ltd.,INE522D01027,Financial Services,NIFTY 500,1
-MRPL,Mangalore Refinery & Petrochemicals Ltd.,INE103A01014,Oil Gas & Consumable Fuels,NIFTY 500,0
-MANKIND,Mankind Pharma Ltd.,INE634S01028,Healthcare,NIFTY 500,1
-MARICO,Marico Ltd.,INE196A01026,Fast Moving Consumer Goods,NIFTY 500,1
-MARUTI,Maruti Suzuki India Ltd.,INE585B01010,Automobile and Auto Components,NIFTY 500,1
-MFSL,Max Financial Services Ltd.,INE180A01020,Financial Services,NIFTY 500,1
-MAXHEALTH,Max Healthcare Institute Ltd.,INE027H01010,Healthcare,NIFTY 500,1
-MAZDOCK,Mazagoan Dock Shipbuilders Ltd.,INE249Z01020,Capital Goods,NIFTY 500,1
-MEESHO,Meesho Ltd.,INE0VDM01015,Consumer Services,NIFTY 500,0
+MRF,MRF Ltd.,INE883A01011,Automobile and Auto Components,"NIFTY MIDCAP 100, NIFTY 500",0
+MGL,Mahanagar Gas Ltd.,INE002S01010,Oil Gas & Consumable Fuels,"NIFTY ENERGY, NIFTY 500",0
+M&MFIN,Mahindra & Mahindra Financial Services Ltd.,INE774D01024,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",0
+M&M,Mahindra & Mahindra Ltd.,INE101A01026,Automobile and Auto Components,"NIFTY 50, NIFTY AUTO, NIFTY 500",0
+MANAPPURAM,Manappuram Finance Ltd.,INE522D01027,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",1
+MRPL,Mangalore Refinery & Petrochemicals Ltd.,INE103A01014,Oil Gas & Consumable Fuels,"NIFTY SMALLCAP 100, NIFTY 500",0
+MANKIND,Mankind Pharma Ltd.,INE634S01028,Healthcare,"NIFTY MIDCAP 100, NIFTY PHARMA, NIFTY 500",1
+MARICO,Marico Ltd.,INE196A01026,Fast Moving Consumer Goods,"NIFTY MIDCAP 100, NIFTY FMCG, NIFTY 500",1
+MARUTI,Maruti Suzuki India Ltd.,INE585B01010,Automobile and Auto Components,"NIFTY 50, NIFTY AUTO, NIFTY 500",1
+MFSL,Max Financial Services Ltd.,INE180A01020,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
+MAXHEALTH,Max Healthcare Institute Ltd.,INE027H01010,Healthcare,"NIFTY 50, NIFTY 500",1
+MAZDOCK,Mazagoan Dock Shipbuilders Ltd.,INE249Z01020,Capital Goods,"NIFTY NEXT 50, NIFTY 500",1
+MEESHO,Meesho Ltd.,INE0VDM01015,Consumer Services,"NIFTY SMALLCAP 100, NIFTY 500",0
 MINDACORP,Minda Corporation Ltd.,INE842C01021,Automobile and Auto Components,NIFTY 500,0
 MSUMI,Motherson Sumi Wiring India Ltd.,INE0FS801015,Automobile and Auto Components,NIFTY 500,0
-MOTILALOFS,Motilal Oswal Financial Services Ltd.,INE338I01027,Financial Services,NIFTY 500,1
-MPHASIS,MphasiS Ltd.,INE356A01018,Information Technology,NIFTY 500,1
-MCX,Multi Commodity Exchange of India Ltd.,INE745G01043,Financial Services,NIFTY 500,1
-MUTHOOTFIN,Muthoot Finance Ltd.,INE414G01012,Financial Services,NIFTY 500,1
-NATCOPHARM,NATCO Pharma Ltd.,INE987B01026,Healthcare,NIFTY 500,0
-NBCC,NBCC (India) Ltd.,INE095N01031,Construction,NIFTY 500,1
+MOTILALOFS,Motilal Oswal Financial Services Ltd.,INE338I01027,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
+MPHASIS,MphasiS Ltd.,INE356A01018,Information Technology,"NIFTY MIDCAP 100, NIFTY IT, NIFTY 500",1
+MCX,Multi Commodity Exchange of India Ltd.,INE745G01043,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
+MUTHOOTFIN,Muthoot Finance Ltd.,INE414G01012,Financial Services,"NIFTY NEXT 50, NIFTY 500",1
+NATCOPHARM,NATCO Pharma Ltd.,INE987B01026,Healthcare,"NIFTY SMALLCAP 100, NIFTY 500",0
+NBCC,NBCC (India) Ltd.,INE095N01031,Construction,"NIFTY SMALLCAP 100, NIFTY 500",1
 NCC,NCC Ltd.,INE868B01028,Construction,NIFTY 500,0
-NHPC,NHPC Ltd.,INE848E01016,Power,NIFTY 500,1
-NLCINDIA,NLC India Ltd.,INE589A01014,Power,NIFTY 500,0
-NMDC,NMDC Ltd.,INE584A01023,Metals & Mining,NIFTY 500,1
+NHPC,NHPC Ltd.,INE848E01016,Power,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",1
+NLCINDIA,NLC India Ltd.,INE589A01014,Power,"NIFTY ENERGY, NIFTY 500",0
+NMDC,NMDC Ltd.,INE584A01023,Metals & Mining,"NIFTY MIDCAP 100, NIFTY METAL, NIFTY 500",1
 NSLNISP,NMDC Steel Ltd.,INE0NNS01018,Metals & Mining,NIFTY 500,0
-NTPCGREEN,NTPC Green Energy Ltd.,INE0ONG01011,Power,NIFTY 500,0
-NTPC,NTPC Ltd.,INE733E01010,Power,NIFTY 500,1
-NH,Narayana Hrudayalaya Ltd.,INE410P01011,Healthcare,NIFTY 500,0
-NATIONALUM,National Aluminium Co. Ltd.,INE139A01034,Metals & Mining,NIFTY 500,1
-NAVA,Nava Ltd.,INE725A01030,Power,NIFTY 500,0
-NAVINFLUOR,Navin Fluorine International Ltd.,INE048G01026,Chemicals,NIFTY 500,0
-NESTLEIND,Nestle India Ltd.,INE239A01024,Fast Moving Consumer Goods,NIFTY 500,1
-NETWEB,Netweb Technologies India Ltd.,INE0NT901020,Information Technology,NIFTY 500,0
-NEULANDLAB,Neuland Laboratories Ltd.,INE794A01010,Healthcare,NIFTY 500,0
+NTPCGREEN,NTPC Green Energy Ltd.,INE0ONG01011,Power,"NIFTY ENERGY, NIFTY 500",0
+NTPC,NTPC Ltd.,INE733E01010,Power,"NIFTY 50, NIFTY ENERGY, NIFTY 500",1
+NH,Narayana Hrudayalaya Ltd.,INE410P01011,Healthcare,"NIFTY SMALLCAP 100, NIFTY 500",0
+NATIONALUM,National Aluminium Co. Ltd.,INE139A01034,Metals & Mining,"NIFTY MIDCAP 100, NIFTY METAL, NIFTY 500",1
+NAVA,Nava Ltd.,INE725A01030,Power,"NIFTY ENERGY, NIFTY 500",0
+NAVINFLUOR,Navin Fluorine International Ltd.,INE048G01026,Chemicals,"NIFTY SMALLCAP 100, NIFTY 500",0
+NESTLEIND,Nestle India Ltd.,INE239A01024,Fast Moving Consumer Goods,"NIFTY 50, NIFTY FMCG, NIFTY 500",1
+NETWEB,Netweb Technologies India Ltd.,INE0NT901020,Information Technology,"NIFTY SMALLCAP 100, NIFTY 500",0
+NEULANDLAB,Neuland Laboratories Ltd.,INE794A01010,Healthcare,"NIFTY SMALLCAP 100, NIFTY 500",0
 NEWGEN,Newgen Software Technologies Ltd.,INE619B01017,Information Technology,NIFTY 500,0
 NAM-INDIA,Nippon Life India Asset Management Ltd.,INE298J01013,Financial Services,NIFTY 500,0
 NIVABUPA,Niva Bupa Health Insurance Company Ltd.,INE995S01015,Financial Services,NIFTY 500,0
-NUVAMA,Nuvama Wealth Management Ltd.,INE531F01023,Financial Services,NIFTY 500,0
+NUVAMA,Nuvama Wealth Management Ltd.,INE531F01023,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
 NUVOCO,Nuvoco Vistas Corporation Ltd.,INE118D01016,Construction Materials,NIFTY 500,0
-OBEROIRLTY,Oberoi Realty Ltd.,INE093I01010,Realty,NIFTY 500,1
-ONGC,Oil & Natural Gas Corporation Ltd.,INE213A01029,Oil Gas & Consumable Fuels,NIFTY 500,1
-OIL,Oil India Ltd.,INE274J01014,Oil Gas & Consumable Fuels,NIFTY 500,1
-OLAELEC,Ola Electric Mobility Ltd.,INE0LXG01040,Automobile and Auto Components,NIFTY 500,0
+OBEROIRLTY,Oberoi Realty Ltd.,INE093I01010,Realty,"NIFTY MIDCAP 100, NIFTY REALTY, NIFTY 500",1
+ONGC,Oil & Natural Gas Corporation Ltd.,INE213A01029,Oil Gas & Consumable Fuels,"NIFTY 50, NIFTY ENERGY, NIFTY 500",1
+OIL,Oil India Ltd.,INE274J01014,Oil Gas & Consumable Fuels,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",1
+OLAELEC,Ola Electric Mobility Ltd.,INE0LXG01040,Automobile and Auto Components,"NIFTY SMALLCAP 100, NIFTY 500",0
 OLECTRA,Olectra Greentech Ltd.,INE260D01016,Automobile and Auto Components,NIFTY 500,0
-PAYTM,One 97 Communications Ltd.,INE982J01020,Financial Services,NIFTY 500,1
+PAYTM,One 97 Communications Ltd.,INE982J01020,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
 ONESOURCE,Onesource Specialty Pharma Ltd.,INE013P01021,Healthcare,NIFTY 500,0
-OFSS,Oracle Financial Services Software Ltd.,INE881D01027,Information Technology,NIFTY 500,1
-POLICYBZR,PB Fintech Ltd.,INE417T01026,Financial Services,NIFTY 500,1
+OFSS,Oracle Financial Services Software Ltd.,INE881D01027,Information Technology,"NIFTY MIDCAP 100, NIFTY IT, NIFTY 500",1
+POLICYBZR,PB Fintech Ltd.,INE417T01026,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
 PCBL,PCBL Chemical Ltd.,INE602A01031,Chemicals,NIFTY 500,0
-PGEL,PG Electroplast Ltd.,INE457L01029,Consumer Durables,NIFTY 500,1
-PIIND,PI Industries Ltd.,INE603J01030,Chemicals,NIFTY 500,1
-PNBHOUSING,PNB Housing Finance Ltd.,INE572E01012,Financial Services,NIFTY 500,1
+PGEL,PG Electroplast Ltd.,INE457L01029,Consumer Durables,"NIFTY SMALLCAP 100, NIFTY 500",1
+PIIND,PI Industries Ltd.,INE603J01030,Chemicals,"NIFTY MIDCAP 100, NIFTY 500",1
+PNBHOUSING,PNB Housing Finance Ltd.,INE572E01012,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",1
 PTCIL,PTC Industries Ltd.,INE596F01018,Capital Goods,NIFTY 500,0
-PVRINOX,PVR INOX Ltd.,INE191H01014,Media Entertainment & Publication,NIFTY 500,0
-PAGEIND,Page Industries Ltd.,INE761H01022,Textiles,NIFTY 500,1
+PVRINOX,PVR INOX Ltd.,INE191H01014,Media Entertainment & Publication,"NIFTY MEDIA, NIFTY 500",0
+PAGEIND,Page Industries Ltd.,INE761H01022,Textiles,"NIFTY MIDCAP 100, NIFTY 500",1
 PARADEEP,Paradeep Phosphates Ltd.,INE088F01024,Chemicals,NIFTY 500,0
-PATANJALI,Patanjali Foods Ltd.,INE619A01035,Fast Moving Consumer Goods,NIFTY 500,1
-PERSISTENT,Persistent Systems Ltd.,INE262H01021,Information Technology,NIFTY 500,1
-PETRONET,Petronet LNG Ltd.,INE347G01014,Oil Gas & Consumable Fuels,NIFTY 500,1
+PATANJALI,Patanjali Foods Ltd.,INE619A01035,Fast Moving Consumer Goods,"NIFTY MIDCAP 100, NIFTY FMCG, NIFTY 500",1
+PERSISTENT,Persistent Systems Ltd.,INE262H01021,Information Technology,"NIFTY MIDCAP 100, NIFTY IT, NIFTY 500",1
+PETRONET,Petronet LNG Ltd.,INE347G01014,Oil Gas & Consumable Fuels,"NIFTY ENERGY, NIFTY 500",1
 PFIZER,Pfizer Ltd.,INE182A01018,Healthcare,NIFTY 500,0
-PHOENIXLTD,Phoenix Mills Ltd.,INE211B01039,Realty,NIFTY 500,1
-PWL,Physicswallah Ltd.,INE0LP301011,Consumer Services,NIFTY 500,0
-PIDILITIND,Pidilite Industries Ltd.,INE318A01026,Chemicals,NIFTY 500,1
-PINELABS,Pine Labs Ltd.,INE15B701018,Financial Services,NIFTY 500,0
-PIRAMALFIN,Piramal Finance Ltd.,INE202B01038,Financial Services,NIFTY 500,0
-PPLPHARMA,Piramal Pharma Ltd.,INE0DK501011,Healthcare,NIFTY 500,0
+PHOENIXLTD,Phoenix Mills Ltd.,INE211B01039,Realty,"NIFTY MIDCAP 100, NIFTY REALTY, NIFTY 500",1
+PWL,Physicswallah Ltd.,INE0LP301011,Consumer Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+PIDILITIND,Pidilite Industries Ltd.,INE318A01026,Chemicals,"NIFTY NEXT 50, NIFTY 500",1
+PINELABS,Pine Labs Ltd.,INE15B701018,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+PIRAMALFIN,Piramal Finance Ltd.,INE202B01038,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+PPLPHARMA,Piramal Pharma Ltd.,INE0DK501011,Healthcare,"NIFTY SMALLCAP 100, NIFTY PHARMA, NIFTY 500",0
 POLYMED,Poly Medicure Ltd.,INE205C01021,Healthcare,NIFTY 500,0
-POLYCAB,Polycab India Ltd.,INE455K01017,Capital Goods,NIFTY 500,1
-POONAWALLA,Poonawalla Fincorp Ltd.,INE511C01022,Financial Services,NIFTY 500,0
-PFC,Power Finance Corporation Ltd.,INE134E01011,Financial Services,NIFTY 500,1
-POWERGRID,Power Grid Corporation of India Ltd.,INE752E01010,Power,NIFTY 500,1
-PREMIERENE,Premier Energies Ltd.,INE0BS701011,Capital Goods,NIFTY 500,1
-PRESTIGE,Prestige Estates Projects Ltd.,INE811K01011,Realty,NIFTY 500,1
-PFOCUS,Prime Focus Ltd.,INE367G01038,Media Entertainment & Publication,NIFTY 500,0
-PNB,Punjab National Bank,INE160A01022,Financial Services,NIFTY 500,1
+POLYCAB,Polycab India Ltd.,INE455K01017,Capital Goods,"NIFTY MIDCAP 100, NIFTY 500",1
+POONAWALLA,Poonawalla Fincorp Ltd.,INE511C01022,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+PFC,Power Finance Corporation Ltd.,INE134E01011,Financial Services,"NIFTY NEXT 50, NIFTY 500",1
+POWERGRID,Power Grid Corporation of India Ltd.,INE752E01010,Power,"NIFTY 50, NIFTY ENERGY, NIFTY 500",1
+PREMIERENE,Premier Energies Ltd.,INE0BS701011,Capital Goods,"NIFTY MIDCAP 100, NIFTY 500",1
+PRESTIGE,Prestige Estates Projects Ltd.,INE811K01011,Realty,"NIFTY MIDCAP 100, NIFTY REALTY, NIFTY 500",1
+PFOCUS,Prime Focus Ltd.,INE367G01038,Media Entertainment & Publication,"NIFTY MEDIA, NIFTY 500",0
+PNB,Punjab National Bank,INE160A01022,Financial Services,"NIFTY BANK, NIFTY NEXT 50, NIFTY 500",1
 RRKABEL,R R Kabel Ltd.,INE777K01022,Capital Goods,NIFTY 500,0
-RBLBANK,RBL Bank Ltd.,INE976G01028,Financial Services,NIFTY 500,1
-RECLTD,REC Ltd.,INE020B01018,Financial Services,NIFTY 500,1
+RBLBANK,RBL Bank Ltd.,INE976G01028,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",1
+RECLTD,REC Ltd.,INE020B01018,Financial Services,"NIFTY NEXT 50, NIFTY 500",1
 RHIM,RHI MAGNESITA INDIA LTD.,INE743M01012,Capital Goods,NIFTY 500,0
 RITES,RITES Ltd.,INE320J01015,Construction,NIFTY 500,0
-RADICO,Radico Khaitan Ltd,INE944F01028,Fast Moving Consumer Goods,NIFTY 500,1
-RVNL,Rail Vikas Nigam Ltd.,INE415G01027,Construction,NIFTY 500,1
+RADICO,Radico Khaitan Ltd,INE944F01028,Fast Moving Consumer Goods,"NIFTY MIDCAP 100, NIFTY FMCG, NIFTY 500",1
+RVNL,Rail Vikas Nigam Ltd.,INE415G01027,Construction,"NIFTY MIDCAP 100, NIFTY 500",1
 RAILTEL,Railtel Corporation Of India Ltd.,INE0DD101019,Telecommunication,NIFTY 500,0
 RAINBOW,Rainbow Childrens Medicare Ltd.,INE961O01016,Healthcare,NIFTY 500,0
 RKFORGE,Ramkrishna Forgings Ltd.,INE399G01023,Automobile and Auto Components,NIFTY 500,0
-REDINGTON,Redington Ltd.,INE891D01026,Services,NIFTY 500,0
-RELIANCE,Reliance Industries Ltd.,INE002A01018,Oil Gas & Consumable Fuels,NIFTY 500,1
-RPOWER,Reliance Power Ltd.,INE614G01033,Power,NIFTY 500,0
+REDINGTON,Redington Ltd.,INE891D01026,Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+RELIANCE,Reliance Industries Ltd.,INE002A01018,Oil Gas & Consumable Fuels,"NIFTY 50, NIFTY ENERGY, NIFTY 500",1
+RPOWER,Reliance Power Ltd.,INE614G01033,Power,"NIFTY SMALLCAP 100, NIFTY ENERGY, NIFTY 500",0
 SBFC,SBFC Finance Ltd.,INE423Y01016,Financial Services,NIFTY 500,0
-SBICARD,SBI Cards and Payment Services Ltd.,INE018E01016,Financial Services,NIFTY 500,1
-SBILIFE,SBI Life Insurance Company Ltd.,INE123W01016,Financial Services,NIFTY 500,1
-SJVN,SJVN Ltd.,INE002L01015,Power,NIFTY 500,0
-SRF,SRF Ltd.,INE647A01010,Chemicals,NIFTY 500,1
-SAGILITY,Sagility Ltd.,INE0W2G01015,Information Technology,NIFTY 500,0
-SAILIFE,Sai Life Sciences Ltd.,INE570L01029,Healthcare,NIFTY 500,0
+SBICARD,SBI Cards and Payment Services Ltd.,INE018E01016,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",1
+SBILIFE,SBI Life Insurance Company Ltd.,INE123W01016,Financial Services,"NIFTY 50, NIFTY 500",1
+SJVN,SJVN Ltd.,INE002L01015,Power,"NIFTY ENERGY, NIFTY 500",0
+SRF,SRF Ltd.,INE647A01010,Chemicals,"NIFTY MIDCAP 100, NIFTY 500",1
+SAGILITY,Sagility Ltd.,INE0W2G01015,Information Technology,"NIFTY SMALLCAP 100, NIFTY 500",0
+SAILIFE,Sai Life Sciences Ltd.,INE570L01029,Healthcare,"NIFTY SMALLCAP 100, NIFTY PHARMA, NIFTY 500",0
 SAMMAANCAP,Sammaan Capital Ltd.,INE148I01020,Financial Services,NIFTY 500,0
-MOTHERSON,Samvardhana Motherson International Ltd.,INE775A01035,Automobile and Auto Components,NIFTY 500,1
+MOTHERSON,Samvardhana Motherson International Ltd.,INE775A01035,Automobile and Auto Components,"NIFTY NEXT 50, NIFTY AUTO, NIFTY 500",1
 SAPPHIRE,Sapphire Foods India Ltd.,INE806T01020,Consumer Services,NIFTY 500,0
-SARDAEN,Sarda Energy and Minerals Ltd.,INE385C01021,Metals & Mining,NIFTY 500,0
-SAREGAMA,Saregama India Ltd,INE979A01025,Media Entertainment & Publication,NIFTY 500,0
+SARDAEN,Sarda Energy and Minerals Ltd.,INE385C01021,Metals & Mining,"NIFTY SMALLCAP 100, NIFTY 500",0
+SAREGAMA,Saregama India Ltd,INE979A01025,Media Entertainment & Publication,"NIFTY MEDIA, NIFTY 500",0
 SCHAEFFLER,Schaeffler India Ltd.,INE513A01022,Automobile and Auto Components,NIFTY 500,0
 SCHNEIDER,Schneider Electric Infrastructure Ltd.,INE839M01018,Capital Goods,NIFTY 500,0
 SCI,Shipping Corporation of India Ltd.,INE109A01011,Services,NIFTY 500,0
-SHREECEM,Shree Cement Ltd.,INE070A01015,Construction Materials,NIFTY 500,1
-SHRIRAMFIN,Shriram Finance Ltd.,INE721A01047,Financial Services,NIFTY 500,1
+SHREECEM,Shree Cement Ltd.,INE070A01015,Construction Materials,"NIFTY NEXT 50, NIFTY 500",1
+SHRIRAMFIN,Shriram Finance Ltd.,INE721A01047,Financial Services,"NIFTY 50, NIFTY 500",1
 SHYAMMETL,Shyam Metalics and Energy Ltd.,INE810G01011,Capital Goods,NIFTY 500,0
-ENRIN,Siemens Energy India Ltd.,INE1NPP01017,Capital Goods,NIFTY 500,0
-SIEMENS,Siemens Ltd.,INE003A01024,Capital Goods,NIFTY 500,1
-SIGNATURE,Signatureglobal (India) Ltd.,INE903U01023,Realty,NIFTY 500,0
-SOBHA,Sobha Ltd.,INE671H01015,Realty,NIFTY 500,0
-SOLARINDS,Solar Industries India Ltd.,INE343H01029,Chemicals,NIFTY 500,1
-SONACOMS,Sona BLW Precision Forgings Ltd.,INE073K01018,Automobile and Auto Components,NIFTY 500,1
+ENRIN,Siemens Energy India Ltd.,INE1NPP01017,Capital Goods,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",0
+SIEMENS,Siemens Ltd.,INE003A01024,Capital Goods,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
+SIGNATURE,Signatureglobal (India) Ltd.,INE903U01023,Realty,"NIFTY SMALLCAP 100, NIFTY 500",0
+SOBHA,Sobha Ltd.,INE671H01015,Realty,"NIFTY REALTY, NIFTY 500",0
+SOLARINDS,Solar Industries India Ltd.,INE343H01029,Chemicals,"NIFTY NEXT 50, NIFTY 500",1
+SONACOMS,Sona BLW Precision Forgings Ltd.,INE073K01018,Automobile and Auto Components,"NIFTY SMALLCAP 100, NIFTY AUTO, NIFTY 500",1
 SONATSOFTW,Sonata Software Ltd.,INE269A01021,Information Technology,NIFTY 500,0
-STARHEALTH,Star Health and Allied Insurance Company Ltd.,INE575P01011,Financial Services,NIFTY 500,0
-SBIN,State Bank of India,INE062A01020,Financial Services,NIFTY 500,1
-SAIL,Steel Authority of India Ltd.,INE114A01011,Metals & Mining,NIFTY 500,1
+STARHEALTH,Star Health and Allied Insurance Company Ltd.,INE575P01011,Financial Services,"NIFTY SMALLCAP 100, NIFTY 500",0
+SBIN,State Bank of India,INE062A01020,Financial Services,"NIFTY 50, NIFTY BANK, NIFTY 500",1
+SAIL,Steel Authority of India Ltd.,INE114A01011,Metals & Mining,"NIFTY MIDCAP 100, NIFTY METAL, NIFTY 500",1
 SUMICHEM,Sumitomo Chemical India Ltd.,INE258G01013,Chemicals,NIFTY 500,0
-SUNPHARMA,Sun Pharmaceutical Industries Ltd.,INE044A01036,Healthcare,NIFTY 500,1
-SUNTV,Sun TV Network Ltd.,INE424H01027,Media Entertainment & Publication,NIFTY 500,0
+SUNPHARMA,Sun Pharmaceutical Industries Ltd.,INE044A01036,Healthcare,"NIFTY 50, NIFTY PHARMA, NIFTY 500",1
+SUNTV,Sun TV Network Ltd.,INE424H01027,Media Entertainment & Publication,"NIFTY MEDIA, NIFTY 500",0
 SUNDARMFIN,Sundaram Finance Ltd.,INE660A01013,Financial Services,NIFTY 500,0
-SUPREMEIND,Supreme Industries Ltd.,INE195A01028,Capital Goods,NIFTY 500,1
+SUPREMEIND,Supreme Industries Ltd.,INE195A01028,Capital Goods,"NIFTY MIDCAP 100, NIFTY 500",1
 SPLPETRO,Supreme Petrochem Ltd.,INE663A01033,Chemicals,NIFTY 500,0
-SUZLON,Suzlon Energy Ltd.,INE040H01021,Capital Goods,NIFTY 500,1
-SWANCORP,Swan Corp Ltd.,INE665A01038,Chemicals,NIFTY 500,0
-SWIGGY,Swiggy Ltd.,INE00H001014,Consumer Services,NIFTY 500,1
-SYNGENE,Syngene International Ltd.,INE398R01022,Healthcare,NIFTY 500,0
+SUZLON,Suzlon Energy Ltd.,INE040H01021,Capital Goods,"NIFTY MIDCAP 100, NIFTY ENERGY, NIFTY 500",1
+SWANCORP,Swan Corp Ltd.,INE665A01038,Chemicals,"NIFTY SMALLCAP 100, NIFTY 500",0
+SWIGGY,Swiggy Ltd.,INE00H001014,Consumer Services,"NIFTY MIDCAP 100, NIFTY 500",1
+SYNGENE,Syngene International Ltd.,INE398R01022,Healthcare,"NIFTY SMALLCAP 100, NIFTY 500",0
 SYRMA,Syrma SGS Technology Ltd.,INE0DYJ01015,Capital Goods,NIFTY 500,0
 TBOTEK,TBO Tek Ltd.,INE673O01025,Consumer Services,NIFTY 500,0
-TVSMOTOR,TVS Motor Company Ltd.,INE494B01023,Automobile and Auto Components,NIFTY 500,1
-TATACAP,Tata Capital Ltd.,INE976I01016,Financial Services,NIFTY 500,0
-TATACHEM,Tata Chemicals Ltd.,INE092A01019,Chemicals,NIFTY 500,0
-TATACOMM,Tata Communications Ltd.,INE151A01013,Telecommunication,NIFTY 500,0
-TCS,Tata Consultancy Services Ltd.,INE467B01029,Information Technology,NIFTY 500,1
-TATACONSUM,Tata Consumer Products Ltd.,INE192A01025,Fast Moving Consumer Goods,NIFTY 500,1
-TATAELXSI,Tata Elxsi Ltd.,INE670A01012,Information Technology,NIFTY 500,1
-TATAINVEST,Tata Investment Corporation Ltd.,INE672A01026,Financial Services,NIFTY 500,0
-TMCV,Tata Motors Ltd.,INE1TAE01010,Capital Goods,NIFTY 500,0
-TMPV,Tata Motors Passenger Vehicles Ltd.,INE155A01022,Automobile and Auto Components,NIFTY 500,1
-TATAPOWER,Tata Power Co. Ltd.,INE245A01021,Power,NIFTY 500,1
-TATASTEEL,Tata Steel Ltd.,INE081A01020,Metals & Mining,NIFTY 500,1
-TATATECH,Tata Technologies Ltd.,INE142M01025,Information Technology,NIFTY 500,0
+TVSMOTOR,TVS Motor Company Ltd.,INE494B01023,Automobile and Auto Components,"NIFTY NEXT 50, NIFTY AUTO, NIFTY 500",1
+TATACAP,Tata Capital Ltd.,INE976I01016,Financial Services,"NIFTY NEXT 50, NIFTY 500",0
+TATACHEM,Tata Chemicals Ltd.,INE092A01019,Chemicals,"NIFTY SMALLCAP 100, NIFTY 500",0
+TATACOMM,Tata Communications Ltd.,INE151A01013,Telecommunication,"NIFTY MIDCAP 100, NIFTY 500",0
+TCS,Tata Consultancy Services Ltd.,INE467B01029,Information Technology,"NIFTY 50, NIFTY IT, NIFTY 500",1
+TATACONSUM,Tata Consumer Products Ltd.,INE192A01025,Fast Moving Consumer Goods,"NIFTY 50, NIFTY FMCG, NIFTY 500",1
+TATAELXSI,Tata Elxsi Ltd.,INE670A01012,Information Technology,"NIFTY MIDCAP 100, NIFTY 500",1
+TATAINVEST,Tata Investment Corporation Ltd.,INE672A01026,Financial Services,"NIFTY MIDCAP 100, NIFTY 500",0
+TMCV,Tata Motors Ltd.,INE1TAE01010,Capital Goods,"NIFTY NEXT 50, NIFTY 500",0
+TMPV,Tata Motors Passenger Vehicles Ltd.,INE155A01022,Automobile and Auto Components,"NIFTY 50, NIFTY AUTO, NIFTY 500",1
+TATAPOWER,Tata Power Co. Ltd.,INE245A01021,Power,"NIFTY NEXT 50, NIFTY ENERGY, NIFTY 500",1
+TATASTEEL,Tata Steel Ltd.,INE081A01020,Metals & Mining,"NIFTY 50, NIFTY METAL, NIFTY 500",1
+TATATECH,Tata Technologies Ltd.,INE142M01025,Information Technology,"NIFTY SMALLCAP 100, NIFTY 500",0
 TTML,Tata Teleservices (Maharashtra) Ltd.,INE517B01013,Telecommunication,NIFTY 500,0
-TECHM,Tech Mahindra Ltd.,INE669C01036,Information Technology,NIFTY 500,1
+TECHM,Tech Mahindra Ltd.,INE669C01036,Information Technology,"NIFTY 50, NIFTY IT, NIFTY 500",1
 TECHNOE,Techno Electric & Engineering Company Ltd.,INE285K01026,Construction,NIFTY 500,0
 TEGA,Tega Industries Ltd.,INE011K01018,Capital Goods,NIFTY 500,0
 TEJASNET,Tejas Networks Ltd.,INE010J01012,Telecommunication,NIFTY 500,0
-TENNIND,Tenneco Clean Air India Ltd.,INE19RI01016,Automobile and Auto Components,NIFTY 500,0
+TENNIND,Tenneco Clean Air India Ltd.,INE19RI01016,Automobile and Auto Components,"NIFTY SMALLCAP 100, NIFTY 500",0
 NIACL,The New India Assurance Company Ltd.,INE470Y01017,Financial Services,NIFTY 500,0
-RAMCOCEM,The Ramco Cements Ltd.,INE331A01037,Construction Materials,NIFTY 500,0
-THERMAX,Thermax Ltd.,INE152A01029,Capital Goods,NIFTY 500,0
+RAMCOCEM,The Ramco Cements Ltd.,INE331A01037,Construction Materials,"NIFTY SMALLCAP 100, NIFTY 500",0
+THERMAX,Thermax Ltd.,INE152A01029,Capital Goods,"NIFTY ENERGY, NIFTY 500",0
 TIMKEN,Timken India Ltd.,INE325A01013,Capital Goods,NIFTY 500,0
 TITAGARH,Titagarh Rail Systems Ltd.,INE615H01020,Capital Goods,NIFTY 500,0
-TITAN,Titan Company Ltd.,INE280A01028,Consumer Durables,NIFTY 500,1
-TORNTPHARM,Torrent Pharmaceuticals Ltd.,INE685A01028,Healthcare,NIFTY 500,1
-TORNTPOWER,Torrent Power Ltd.,INE813H01021,Power,NIFTY 500,0
+TITAN,Titan Company Ltd.,INE280A01028,Consumer Durables,"NIFTY 50, NIFTY 500",1
+TORNTPHARM,Torrent Pharmaceuticals Ltd.,INE685A01028,Healthcare,"NIFTY NEXT 50, NIFTY PHARMA, NIFTY 500",1
+TORNTPOWER,Torrent Power Ltd.,INE813H01021,Power,"NIFTY ENERGY, NIFTY 500",0
 TARIL,Transformers And Rectifiers (India) Ltd.,INE763I01026,Capital Goods,NIFTY 500,0
 TRAVELFOOD,Travel Food Services Ltd.,INE103V01028,Consumer Services,NIFTY 500,0
-TRENT,Trent Ltd.,INE849A01020,Consumer Services,NIFTY 500,1
+TRENT,Trent Ltd.,INE849A01020,Consumer Services,"NIFTY 50, NIFTY 500",1
 TRIDENT,Trident Ltd.,INE064C01022,Textiles,NIFTY 500,0
-TRITURBINE,Triveni Turbine Ltd.,INE152M01016,Capital Goods,NIFTY 500,0
-TIINDIA,Tube Investments of India Ltd.,INE974X01010,Automobile and Auto Components,NIFTY 500,1
+TRITURBINE,Triveni Turbine Ltd.,INE152M01016,Capital Goods,"NIFTY SMALLCAP 100, NIFTY 500",0
+TIINDIA,Tube Investments of India Ltd.,INE974X01010,Automobile and Auto Components,"NIFTY MIDCAP 100, NIFTY AUTO, NIFTY 500",1
 UCOBANK,UCO Bank,INE691A01018,Financial Services,NIFTY 500,0
-UNOMINDA,UNO Minda Ltd.,INE405E01023,Automobile and Auto Components,NIFTY 500,1
-UPL,UPL Ltd.,INE628A01036,Chemicals,NIFTY 500,1
+UNOMINDA,UNO Minda Ltd.,INE405E01023,Automobile and Auto Components,"NIFTY AUTO, NIFTY 500",1
+UPL,UPL Ltd.,INE628A01036,Chemicals,"NIFTY MIDCAP 100, NIFTY 500",1
 UTIAMC,UTI Asset Management Company Ltd.,INE094J01016,Financial Services,NIFTY 500,0
-ULTRACEMCO,UltraTech Cement Ltd.,INE481G01011,Construction Materials,NIFTY 500,1
-UNIONBANK,Union Bank of India,INE692A01016,Financial Services,NIFTY 500,1
-UBL,United Breweries Ltd.,INE686F01025,Fast Moving Consumer Goods,NIFTY 500,0
-UNITDSPR,United Spirits Ltd.,INE854D01024,Fast Moving Consumer Goods,NIFTY 500,1
-URBANCO,Urban Company Ltd.,INE0CAZ01013,Consumer Services,NIFTY 500,0
+ULTRACEMCO,UltraTech Cement Ltd.,INE481G01011,Construction Materials,"NIFTY 50, NIFTY 500",1
+UNIONBANK,Union Bank of India,INE692A01016,Financial Services,"NIFTY BANK, NIFTY NEXT 50, NIFTY 500",1
+UBL,United Breweries Ltd.,INE686F01025,Fast Moving Consumer Goods,"NIFTY FMCG, NIFTY 500",0
+UNITDSPR,United Spirits Ltd.,INE854D01024,Fast Moving Consumer Goods,"NIFTY NEXT 50, NIFTY FMCG, NIFTY 500",1
+URBANCO,Urban Company Ltd.,INE0CAZ01013,Consumer Services,"NIFTY SMALLCAP 100, NIFTY 500",0
 USHAMART,Usha Martin Ltd.,INE228A01035,Capital Goods,NIFTY 500,0
 VTL,Vardhman Textiles Ltd.,INE825A01020,Textiles,NIFTY 500,0
-VBL,Varun Beverages Ltd.,INE200M01039,Fast Moving Consumer Goods,NIFTY 500,1
-VEDL,Vedanta Ltd.,INE205A01025,Metals & Mining,NIFTY 500,1
+VBL,Varun Beverages Ltd.,INE200M01039,Fast Moving Consumer Goods,"NIFTY NEXT 50, NIFTY FMCG, NIFTY 500",1
+VEDL,Vedanta Ltd.,INE205A01025,Metals & Mining,"NIFTY NEXT 50, NIFTY METAL, NIFTY 500",1
 VIJAYA,Vijaya Diagnostic Centre Ltd.,INE043W01024,Healthcare,NIFTY 500,0
-VMM,Vishal Mega Mart Ltd.,INE01EA01019,Consumer Services,NIFTY 500,1
-IDEA,Vodafone Idea Ltd.,INE669E01016,Telecommunication,NIFTY 500,1
-VOLTAS,Voltas Ltd.,INE226A01021,Consumer Durables,NIFTY 500,1
-WAAREEENER,Waaree Energies Ltd.,INE377N01017,Capital Goods,NIFTY 500,1
-WELCORP,Welspun Corp Ltd.,INE191B01025,Capital Goods,NIFTY 500,0
+VMM,Vishal Mega Mart Ltd.,INE01EA01019,Consumer Services,"NIFTY MIDCAP 100, NIFTY 500",1
+IDEA,Vodafone Idea Ltd.,INE669E01016,Telecommunication,"NIFTY MIDCAP 100, NIFTY 500",1
+VOLTAS,Voltas Ltd.,INE226A01021,Consumer Durables,"NIFTY MIDCAP 100, NIFTY 500",1
+WAAREEENER,Waaree Energies Ltd.,INE377N01017,Capital Goods,"NIFTY MIDCAP 100, NIFTY 500",1
+WELCORP,Welspun Corp Ltd.,INE191B01025,Capital Goods,"NIFTY SMALLCAP 100, NIFTY METAL, NIFTY 500",0
 WELSPUNLIV,Welspun Living Ltd.,INE192B01031,Textiles,NIFTY 500,0
-WHIRLPOOL,Whirlpool of India Ltd.,INE716A01013,Consumer Durables,NIFTY 500,0
-WIPRO,Wipro Ltd.,INE075A01022,Information Technology,NIFTY 500,1
-WOCKPHARMA,Wockhardt Ltd.,INE049B01025,Healthcare,NIFTY 500,0
-YESBANK,Yes Bank Ltd.,INE528G01035,Financial Services,NIFTY 500,1
+WHIRLPOOL,Whirlpool of India Ltd.,INE716A01013,Consumer Durables,"NIFTY SMALLCAP 100, NIFTY 500",0
+WIPRO,Wipro Ltd.,INE075A01022,Information Technology,"NIFTY 50, NIFTY IT, NIFTY 500",1
+WOCKPHARMA,Wockhardt Ltd.,INE049B01025,Healthcare,"NIFTY SMALLCAP 100, NIFTY PHARMA, NIFTY 500",0
+YESBANK,Yes Bank Ltd.,INE528G01035,Financial Services,"NIFTY BANK, NIFTY MIDCAP 100, NIFTY 500",1
 ZFCVINDIA,ZF Commercial Vehicle Control Systems India Ltd.,INE342J01019,Automobile and Auto Components,NIFTY 500,0
-ZEEL,Zee Entertainment Enterprises Ltd.,INE256A01028,Media Entertainment & Publication,NIFTY 500,0
+ZEEL,Zee Entertainment Enterprises Ltd.,INE256A01028,Media Entertainment & Publication,"NIFTY MEDIA, NIFTY 500",0
 ZENTEC,Zen Technologies Ltd.,INE251B01027,Capital Goods,NIFTY 500,0
-ZENSARTECH,Zensar Technolgies Ltd.,INE520A01027,Information Technology,NIFTY 500,0
-ZYDUSLIFE,Zydus Lifesciences Ltd.,INE010B01027,Healthcare,NIFTY 500,1
+ZENSARTECH,Zensar Technolgies Ltd.,INE520A01027,Information Technology,"NIFTY SMALLCAP 100, NIFTY 500",0
+ZYDUSLIFE,Zydus Lifesciences Ltd.,INE010B01027,Healthcare,"NIFTY NEXT 50, NIFTY PHARMA, NIFTY 500",1
 ZYDUSWELL,Zydus Wellness Ltd.,INE768C01028,Fast Moving Consumer Goods,NIFTY 500,0
 ECLERX,eClerx Services Ltd.,INE738I01010,Services,NIFTY 500,0
