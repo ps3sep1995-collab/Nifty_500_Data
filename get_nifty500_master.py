@@ -55,18 +55,39 @@ def create_nifty500_master():
 
     print(f"✅ Nifty 500 स्टॉक्स लोड हो गए! कुल स्टॉक्स: {len(n500_df)}", flush=True)
 
-    # 2. F&O Derivatives List डाउनलोड करें
+     # 2. NSE Official F&O List (Market Lots File से)
     fno_urls = [
-        "https://archives.nseindia.com/content/indices/ind_niftyderivativeslist.csv",
-        "https://niftyindices.com/IndexConstituent/ind_niftyderivativeslist.csv"
+        "https://archives.nseindia.com/content/fo/fo_mktlots.csv",
+        "https://www.nseindia.com/content/fo/fo_mktlots.csv"
     ]
-    fno_df = fetch_csv_safe(session, fno_urls)
     fno_symbols = set()
-    if fno_df is not None and 'Symbol' in fno_df.columns:
-        fno_symbols = set(fno_df['Symbol'].str.strip().str.upper().unique())
-        print(f"✅ F&O स्टॉक्स की लिस्ट मिली: {len(fno_symbols)} स्टॉक्स", flush=True)
-    else:
-        print("⚠️ F&O लिस्ट प्राप्त नहीं हो सकी, आगे बढ़ रहे हैं...", flush=True)
+    
+    for furl in fno_urls:
+        try:
+            res = session.get(furl, timeout=15)
+            if res.status_code == 200 and len(res.content) > 500:
+                # NSE fo_mktlots.csv को रीड करना
+                fno_df = pd.read_csv(io.BytesIO(res.content))
+                # स्पेस साफ़ करना
+                fno_df.columns = fno_df.columns.str.strip()
+                
+                # NSE फ़ाइल में स्टॉक्स के सिंबल 2 या 3 नंबर कॉलम में होते हैं
+                for col in fno_df.columns:
+                    if 'SYMBOL' in col.upper() or 'UNDERLYING' in col.upper():
+                        fno_symbols = set(fno_df[col].dropna().astype(str).str.strip().str.upper().unique())
+                        break
+                        
+                # सूचकांकों (Indices like NIFTY, BANKNIFTY) को F&O स्टॉक्स की लिस्ट से हटाना
+                fno_symbols = {sym for sym in fno_symbols if sym not in ['NIFTY', 'BANKNIFTY', 'FINNIFTY', 'MIDCPNIFTY']}
+                
+                if len(fno_symbols) > 50:
+                    print(f"✅ NSE Official से F&O स्टॉक्स मिले: {len(fno_symbols)} स्टॉक्स", flush=True)
+                    break
+        except Exception as e:
+            continue
+
+    if not fno_symbols:
+        print("⚠️ NSE F&O लिस्ट प्राप्त नहीं हो सकी, आगे बढ़ रहे हैं...", flush=True)
 
     # 3. मुख्य सूचकांक (Sub-Indices) डाउनलोड करें
     indices_config = {
