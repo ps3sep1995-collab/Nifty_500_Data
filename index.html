@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&O Volume Breakout Dashboard</title>
+    <!-- PapaParse for CSV parsing & Tailwind CSS for UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="mb-8 text-center md:text-left border-b border-slate-700 pb-4">
+            <h1 class="text-3xl font-bold text-emerald-400">🔥 F&O Delivery Volume Breakout Scanner</h1>
+            <p class="text-slate-400 text-sm mt-1">2x Volume Breakout, Sectoral & Top 5 Gainer/Loser Tracker</p>
+        </header>
+
+        <!-- Filters Section -->
+        <div class="bg-slate-800 p-4 rounded-xl mb-6 shadow-lg border border-slate-700 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Symbol Search Filter -->
+            <div>
+                <label class="block text-xs text-slate-400 mb-1">Search Symbol / Company</label>
+                <input type="text" id="symbolInput" oninput="applyFilters()" placeholder="e.g. RELIANCE, TCS..." 
+                       class="w-full bg-slate-900 border border-slate-600 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+            </div>
+
+            <!-- Date Filter -->
+            <div>
+                <label class="block text-xs text-slate-400 mb-1">Select Date</label>
+                <select id="dateSelect" onchange="applyFilters()" 
+                        class="w-full bg-slate-900 border border-slate-600 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+                    <option value="">All Dates</option>
+                </select>
+            </div>
+
+            <!-- Breakout Signal Filter -->
+            <div>
+                <label class="block text-xs text-slate-400 mb-1">Breakout Type</label>
+                <select id="breakoutSelect" onchange="applyFilters()" 
+                        class="w-full bg-slate-900 border border-slate-600 rounded px-3 py-2 text-sm text-white focus:outline-none focus:border-emerald-500">
+                    <option value="">All Signals</option>
+                    <option value="2D">2D Average</option>
+                    <option value="5D">5D Average</option>
+                    <option value="7D">7D Average</option>
+                    <option value="10D">10D Average</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="overflow-x-auto bg-slate-800 rounded-xl border border-slate-700 shadow-xl">
+            <table class="w-full text-left border-collapse text-sm">
+                <thead class="bg-slate-950 text-slate-300 uppercase text-xs font-semibold">
+                    <tr>
+                        <th class="p-3 border-b border-slate-700">Symbol</th>
+                        <th class="p-3 border-b border-slate-700">Sector</th>
+                        <th class="p-3 border-b border-slate-700">Indices</th>
+                        <th class="p-3 border-b border-slate-700 text-right">Close</th>
+                        <th class="p-3 border-b border-slate-700 text-right">Change %</th>
+                        <th class="p-3 border-b border-slate-700 text-right">Deliv Qty</th>
+                        <th class="p-3 border-b border-slate-700 text-center">Breakout Signal</th>
+                        <th class="p-3 border-b border-slate-700 text-center">Top 5 Rank</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="divide-y divide-slate-700 text-slate-200">
+                    <tr>
+                        <td colspan="8" class="p-6 text-center text-slate-400">डेटा लोड हो रहा है...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JavaScript Engine -->
+    <script>
+        let rawData = [];
+
+        // Fetch CSV file automatically from path
+        window.addEventListener('DOMContentLoaded', () => {
+            Papa.parse('data/processed/volume_breakout_scan.csv', {
+                download: true,
+                header: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    rawData = results.data;
+                    populateDateDropdown(rawData);
+                    applyFilters();
+                },
+                error: function(err) {
+                    document.getElementById('tableBody').innerHTML = 
+                        `<tr><td colspan="8" class="p-6 text-center text-red-400">❌ CSV फ़ाइल लोड नहीं हो सकी: ${err}</td></tr>`;
+                }
+            });
+        });
+
+        function populateDateDropdown(data) {
+            const dateSelect = document.getElementById('dateSelect');
+            const dates = [...new Set(data.map(item => item.DATE).filter(Boolean))].sort().reverse();
+            
+            dates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                option.textContent = date;
+                dateSelect.appendChild(option);
+            });
+        }
+
+        function applyFilters() {
+            const symbolSearch = document.getElementById('symbolInput').value.toUpperCase().trim();
+            const selectedDate = document.getElementById('dateSelect').value;
+            const selectedBreakout = document.getElementById('breakoutSelect').value;
+
+            const filteredData = rawData.filter(row => {
+                const matchSymbol = !symbolSearch || 
+                    (row.SYMBOL && row.SYMBOL.includes(symbolSearch)) || 
+                    (row.COMPANY_NAME && row.COMPANY_NAME.toUpperCase().includes(symbolSearch));
+                
+                const matchDate = !selectedDate || row.DATE === selectedDate;
+                const matchBreakout = !selectedBreakout || (row.BREAKOUT_SIGNAL && row.BREAKOUT_SIGNAL.includes(selectedBreakout));
+
+                return matchSymbol && matchDate && matchBreakout;
+            });
+
+            renderTable(filteredData);
+        }
+
+        function renderTable(data) {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            if (data.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8" class="p-6 text-center text-slate-400">कोई मैचिंग रिकॉर्ड नहीं मिला।</td></tr>`;
+                return;
+            }
+
+            data.forEach(row => {
+                const changeVal = parseFloat(row.PCT_CHANGE) || 0;
+                const changeClass = changeVal >= 0 ? 'text-emerald-400' : 'text-rose-400';
+                
+                let rankBadge = '<span class="text-slate-500">-</span>';
+                if (row.TOP_5_STATUS && row.TOP_5_STATUS.includes('Gainer')) {
+                    rankBadge = `<span class="bg-emerald-900/60 text-emerald-300 px-2 py-0.5 rounded text-xs border border-emerald-500">${row.TOP_5_STATUS}</span>`;
+                } else if (row.TOP_5_STATUS && row.TOP_5_STATUS.includes('Loser')) {
+                    rankBadge = `<span class="bg-rose-900/60 text-rose-300 px-2 py-0.5 rounded text-xs border border-rose-500">${row.TOP_5_STATUS}</span>`;
+                }
+
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-slate-750 transition';
+                tr.innerHTML = `
+                    <td class="p-3 font-semibold text-emerald-400">
+                        ${row.SYMBOL || ''}
+                        <div class="text-xs font-normal text-slate-400">${row.COMPANY_NAME || ''}</div>
+                    </td>
+                    <td class="p-3 text-slate-300">${row.SECTOR || 'Others'}</td>
+                    <td class="p-3 text-xs text-slate-400 max-w-xs truncate">${row.INDICES || '-'}</td>
+                    <td class="p-3 text-right font-mono">${row.CLOSE || '0.00'}</td>
+                    <td class="p-3 text-right font-mono font-bold ${changeClass}">${changeVal > 0 ? '+' : ''}${changeVal}%</td>
+                    <td class="p-3 text-right font-mono">${parseInt(row.DELIV_QTY || 0).toLocaleString('en-IN')}</td>
+                    <td class="p-3 text-center">
+                        <span class="bg-amber-900/50 text-amber-300 border border-amber-600 px-2 py-0.5 rounded text-xs font-semibold">
+                            ${row.BREAKOUT_SIGNAL || 'NO'}
+                        </span>
+                    </td>
+                    <td class="p-3 text-center">${rankBadge}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+    </script>
+</body>
+</html>
