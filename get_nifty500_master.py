@@ -28,10 +28,10 @@ def load_fno_symbols_from_local():
     return fno_symbols
 
 def create_nifty500_master():
-    print("🚀 Nifty 500 मास्टर लिस्ट और सेक्टर्स मैपिंग शुरू की जा रही है...", flush=True)
+    print("🚀 Nifty 500 और सभी सेक्टोरल इंडेक्स डेटा तैयार किया जा रहा है...", flush=True)
     os.makedirs("data/master", exist_ok=True)
 
-    # 1. Nifty 500 मास्टर लिस्ट (इसमें IT, Pharma, Realty सभी सेक्टर्स का नाम पहले से ही 'Industry' कॉलम में होता है)
+    # 1. Nifty 500 मास्टर लिस्ट (Archives URL - 100% ओपन)
     n500_url = "https://archives.nseindia.com/content/indices/ind_nifty500list.csv"
     try:
         res = requests.get(n500_url, headers=HEADERS, timeout=15)
@@ -42,24 +42,26 @@ def create_nifty500_master():
         print(f"❌ Nifty 500 डाउनलोड में समस्या: {e}", flush=True)
         return
 
-    # 2. F&O स्टॉक्स लोड करें
+    # 2. आपकी फ़ाइल से F&O स्टॉक्स लोड करें
     fno_symbols = load_fno_symbols_from_local()
 
-    # 3. सभी सेक्टोरल और ब्रॉड इंडेक्स मैपिंग (IT, Pharma, Realty, Media, Bank आदि)
+    # 3. स्क्रीनशॉट के अनुसार सभी सेक्टोरल और ब्रॉड इंडेक्स की URLs
     indices_config = {
         'NIFTY 50': "https://archives.nseindia.com/content/indices/ind_nifty50list.csv",
-        'NIFTY BANK': "https://archives.nseindia.com/content/indices/ind_niftybanklist.csv",
         'NIFTY NEXT 50': "https://archives.nseindia.com/content/indices/ind_niftynext50list.csv",
-        'NIFTY MIDCAP 100': "https://archives.nseindia.com/content/indices/ind_niftymidcap100list.csv",
-        'NIFTY SMALLCAP 100': "https://archives.nseindia.com/content/indices/ind_niftysmallcap100list.csv",
+        'NIFTY BANK': "https://archives.nseindia.com/content/indices/ind_niftybanklist.csv",
+        'NIFTY FINANCIAL SERVICES': "https://archives.nseindia.com/content/indices/ind_niftyfinancialserviceslist.csv",
+        'NIFTY FMCG': "https://archives.nseindia.com/content/indices/ind_niftyfmcglist.csv",
         'NIFTY IT': "https://archives.nseindia.com/content/indices/ind_niftyitlist.csv",
         'NIFTY PHARMA': "https://archives.nseindia.com/content/indices/ind_niftypharmalist.csv",
+        'NIFTY METAL': "https://archives.nseindia.com/content/indices/ind_niftymetallist.csv",
         'NIFTY REALTY': "https://archives.nseindia.com/content/indices/ind_niftyrealtylist.csv",
+        'NIFTY ENERGY': "https://archives.nseindia.com/content/indices/ind_niftyenergylist.csv",
+        'NIFTY OIL & GAS': "https://archives.nseindia.com/content/indices/ind_niftyoilgaslist.csv",
         'NIFTY MEDIA': "https://archives.nseindia.com/content/indices/ind_niftymedialist.csv",
         'NIFTY AUTO': "https://archives.nseindia.com/content/indices/ind_niftyautolist.csv",
-        'NIFTY FMCG': "https://archives.nseindia.com/content/indices/ind_niftyfmcglist.csv",
-        'NIFTY METAL': "https://archives.nseindia.com/content/indices/ind_niftymetallist.csv",
-        'NIFTY ENERGY': "https://archives.nseindia.com/content/indices/ind_niftyenergylist.csv"
+        'NIFTY HEALTHCARE': "https://archives.nseindia.com/content/indices/ind_niftyhealthcarelist.csv",
+        'NIFTY CONSUMER DURABLES': "https://archives.nseindia.com/content/indices/ind_niftyconsumerdurableslist.csv"
     }
 
     index_mapping = {}
@@ -104,8 +106,8 @@ def create_nifty500_master():
             'SYMBOL': symbol,
             'COMPANY_NAME': company_name,
             'ISIN': isin,
-            'SECTOR': industry,          # उदाहरण: Information Technology, Pharmaceuticals, Realty आदि।
-            'INDICES': indices_str,       # उदाहरण: NIFTY 500, NIFTY IT
+            'SECTOR': industry,
+            'INDICES': indices_str,
             'IS_FNO': is_fno
         })
 
@@ -113,7 +115,7 @@ def create_nifty500_master():
     output_path = "data/master/nifty500_master.csv"
     master_df.to_csv(output_path, index=False)
 
-    print(f"\n🎉 सफलता! मास्टर फ़ाइल `{output_path}` में तैयार है।", flush=True)
+    print(f"\n🎉 सफलता! सेक्टर्स के साथ मास्टर फ़ाइल `{output_path}` तैयार है।", flush=True)
     print(f"📊 कुल रिकॉर्ड्स: {len(master_df)}", flush=True)
     print(f"🔥 इनमें से F&O स्टॉक्स: {master_df['IS_FNO'].sum()}", flush=True)
 
