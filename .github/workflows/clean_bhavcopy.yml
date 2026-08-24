@@ -1,0 +1,31 @@
+name: Clean Bhavcopy F&O Only
+
+on:
+  workflow_dispatch: # गिटहब UI से मैनुअली रन करने के लिए
+
+jobs:
+  clean-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install pandas
+
+      - name: Run Bhavcopy Cleaning Script
+        run: |
+          python clean_bhavcopy_files.py
+
+      - name: Commit and Push Cleaned Files
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/raw/*.csv
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-clean Bhavcopy: Retained F&O symbols only" && git push)
