@@ -148,6 +148,7 @@ DIVISLAB,Divi's Laboratories Ltd.,INE361B01024,Healthcare,"NIFTY NEXT 50, NIFTY 
 DIXON,Dixon Technologies (India) Ltd.,INE935N01020,Consumer Durables,"NIFTY CONSUMER DURABLES, NIFTY 500",1
 LALPATHLAB,Dr. Lal Path Labs Ltd.,INE600L01024,Healthcare,NIFTY 500,0
 DRREDDY,Dr. Reddy's Laboratories Ltd.,INE089A01031,Healthcare,"NIFTY 50, NIFTY PHARMA, NIFTY HEALTHCARE, NIFTY 500",1
+DUMMYHEG,Dummy HEG Ltd.,DUM545A01024,Metals & Mining,NIFTY 500,0
 EIDPARRY,E.I.D. Parry (India) Ltd.,INE126A01031,Fast Moving Consumer Goods,NIFTY 500,0
 EIHOTEL,EIH Ltd.,INE230A01023,Consumer Services,NIFTY 500,0
 EICHERMOT,Eicher Motors Ltd.,INE066A01021,Automobile and Auto Components,"NIFTY 50, NIFTY AUTO, NIFTY 500",1
@@ -195,13 +196,13 @@ GRAVITA,Gravita India Ltd.,INE024L01027,Metals & Mining,NIFTY 500,0
 GESHIP,Great Eastern Shipping Co. Ltd.,INE017A01032,Services,NIFTY 500,0
 FLUOROCHEM,Gujarat Fluorochemicals Ltd.,INE09N301011,Chemicals,NIFTY 500,0
 GMDCLTD,Gujarat Mineral Development Corporation Ltd.,INE131A01031,Metals & Mining,NIFTY 500,0
-HEG,H.E.G. Ltd.,INE545A01024,Capital Goods,NIFTY 500,0
 HBLENGINE,HBL Engineering Ltd.,INE292B01021,Capital Goods,NIFTY 500,0
 HCLTECH,HCL Technologies Ltd.,INE860A01027,Information Technology,"NIFTY 50, NIFTY IT, NIFTY 500",1
 HDBFS,HDB Financial Services Ltd.,INE756I01012,Financial Services,NIFTY 500,0
 HDFCAMC,HDFC Asset Management Company Ltd.,INE127D01025,Financial Services,"NIFTY NEXT 50, NIFTY 500",1
 HDFCBANK,HDFC Bank Ltd.,INE040A01034,Financial Services,"NIFTY 50, NIFTY BANK, NIFTY 500",1
 HDFCLIFE,HDFC Life Insurance Company Ltd.,INE795G01014,Financial Services,"NIFTY 50, NIFTY 500",1
+HEG,HEG Ltd.,INE545A01024,Capital Goods,NIFTY 500,0
 HFCL,HFCL Ltd.,INE548A01028,Telecommunication,NIFTY 500,0
 HAVELLS,Havells India Ltd.,INE176B01034,Consumer Durables,"NIFTY CONSUMER DURABLES, NIFTY 500",1
 HEROMOTOCO,Hero MotoCorp Ltd.,INE158A01026,Automobile and Auto Components,"NIFTY AUTO, NIFTY 500",1
